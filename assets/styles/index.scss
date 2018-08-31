@@ -1,0 +1,24 @@
+// Our global variables to override Picnic variables
+// Most variables are listed here:
+// https://github.com/franciscop/picnic/blob/master/src/themes/default/_theme.scss
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+// Picnic modules we're using
+@import 'node_modules/picnic/src/themes/default/theme';
+@import 'node_modules/picnic/src/vendor/compass-breakpoint/stylesheets/breakpoint';
+@import 'node_modules/picnic/src/plugins/normalize/plugin';
+@import 'node_modules/picnic/src/plugins/generic/plugin';
+
+html,
+body {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Georgia, serif;
+}
