@@ -1,0 +1,31 @@
+.header-footer {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  width: 100vw;
+  padding-top: 1vh;
+
+  .header-footer__brand {
+    display: none;
+  }
+
+  .header-footer__logos {
+    position: relative;
+    text-align: right;
+
+    img {
+      margin-right: 2vw;
+      max-height: 8vh;
+
+      &[alt="SNAP logo"] {
+        height: 5.6vh;
+        position: relative;
+        bottom: 0.8vh;
+      }
+    }
+  }
+
+  &.header__stuck {
+    position: fixed;
+    top: 0;
+  }
+}

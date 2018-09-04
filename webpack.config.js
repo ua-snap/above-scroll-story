@@ -31,7 +31,11 @@ module.exports = {
             dirNode,
             dirApp,
             dirAssets
-        ]
+        ],
+        alias: {
+          '@': dirAssets,
+          node_modules: dirNode
+        }
     },
     plugins: [
         new webpack.DefinePlugin({
@@ -57,7 +61,10 @@ module.exports = {
                   formatter: require('eslint-friendly-formatter')
                 }
             },
-
+            {
+              test: /\.ejs$/,
+              loader: 'ejs-compiled-loader'
+            },
             // BABEL
             {
                 test: /\.js$/,

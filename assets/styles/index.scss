@@ -2,17 +2,37 @@
 // Most variables are listed here:
 // https://github.com/franciscop/picnic/blob/master/src/themes/default/_theme.scss
 @import 'variables';
-@import url('https://fonts.googleapis.com/css?family=Lato');
 
 // Picnic modules we're using
-@import 'node_modules/picnic/src/themes/default/theme';
-@import 'node_modules/picnic/src/vendor/compass-breakpoint/stylesheets/breakpoint';
-@import 'node_modules/picnic/src/plugins/normalize/plugin';
-@import 'node_modules/picnic/src/plugins/generic/plugin';
+@import '~picnic/src/themes/default/theme';
+@import '~picnic/src/vendor/compass-breakpoint/stylesheets/breakpoint';
+@import '~picnic/src/plugins/normalize/plugin';
+@import '~picnic/src/plugins/generic/plugin';
+
+// Fonts!
+@import url('https://fonts.googleapis.com/css?family=Cabin:700|Cardo');
+
+// General styles we're using for thematic areas
+@import 'narrative';
+
+// Globally-used styles for vendor libs
+@import '~leaflet/dist/leaflet.css';
+@import '~leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css';
+
+// Styles for page areas!
+@import 'title';
+@import 'headerFooter';
+@import 'introduction';
+@import 'iceAndSnow';
 
 html,
 body {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-family: 'Cardo', serif;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+
+  // Needed for some scrolling effects
+  min-height: 2000px;
 }
 
 h1,
@@ -20,5 +40,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Georgia, serif;
+  font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+  font-size: 36pt;
 }

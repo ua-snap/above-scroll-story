@@ -1,4 +1,6 @@
 import L from 'leaflet'
+import p4l from 'proj4leaflet' // eslint-disable-line
+import 'leaflet-defaulticon-compatibility'
 
 var crs = new L.Proj.CRS('EPSG:3338',
 '+proj=aea +lat_1=55 +lat_2=65 +lat_0=50 +lon_0=-154 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs',
@@ -23,7 +25,6 @@ var mapOptions = {
   zoomControl: false,
   dragging: false
 }
-var mymap = L.map('map1', mapOptions)
 
 var baseLayerOptions = {
   transparent: true,
@@ -59,5 +60,10 @@ var placesLayer = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
 //     opacity: 0.8
 //   }
 // )
-baseLayer.addTo(mymap)
-placesLayer.addTo(mymap)
+
+export function getBaseMap (divId) {
+  var map = L.map(divId, mapOptions)
+  baseLayer.addTo(map)
+  placesLayer.addTo(map)
+  return map
+}

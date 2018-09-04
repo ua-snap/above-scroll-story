@@ -5,8 +5,7 @@
 // Load application styles
 import 'styles/index.scss'
 
-// ================================
-// START YOUR APP HERE
-// ================================
+// App!
+import 'headerFooter'
 import 'baseMap'
-import 'mapScroller'
+import 'iceAndSnow'

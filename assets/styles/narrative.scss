@@ -1,0 +1,20 @@
+// Styles applying to large narrative blocks.
+
+.narrative {
+  // Center nicely
+  @media (max-width: 1500px) {
+    width: 40em;
+  }
+
+  max-width: 1400px;
+  margin: 5vh auto;
+
+  // Drop cap
+  p:first-of-type::first-letter {
+    font-size: 4em;
+    padding: 0 0.1em 0 0;
+    margin: 0;
+    float: left;
+    line-height: 0.9;
+  }
+}

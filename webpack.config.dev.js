@@ -1,3 +1,4 @@
+const path = require('path');
 const merge = require('webpack-merge');
 const webpackConfig = require('./webpack.config');
 
@@ -12,7 +13,14 @@ module.exports = merge(webpackConfig, {
     },
 
     devServer: {
-        host: '0.0.0.0'
+        host: '0.0.0.0',
+        contentBase: [
+          path.join(__dirname, 'app'),
+          path.join(__dirname, 'assets'),
+          path.join(__dirname, 'templates'),
+          __dirname
+        ],
+        watchContentBase: true
     }
 
 });
