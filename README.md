@@ -1,39 +1,53 @@
-Webpack 4 Boilerplate
-===========
+# 'Scrollytelling' narrative for ABoVE report
 
-[![Dependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate) 
-[![devDependency Status](https://david-dm.org/cvgellhorn/webpack-boilerplate/dev-status.svg)](https://david-dm.org/cvgellhorn/webpack-boilerplate)
+This is the narrative portion of a report for the ABoVE project, implemented in a 'scrollytelling' style.
 
-> Plain webpack 4 boilerplate with Babel, SASS and lodash on board
+This is built using, among other things:
 
-## Requirements
-You only need <b>node.js</b> pre-installed and you’re good to go. 
+ * [webpack boilerplate](https://github.com/cvgellhorn/webpack-boilerplate)
+ * [leaflet](https://leafletjs.com) for maps
+ * [picnicss](https://picnicss.com) for design framework
+ * [scrollama](https://github.com/russellgoldenberg/scrollama) for scroll effects
 
-If you don’t want to work with lodash, just remove it from the node packages and the webpack config.
+## How to work on this project
 
-## Download
-Download in current directory
-```sh
-$ curl -L -o master.zip https://github.com/cvgellhorn/webpack-boilerplate/archive/master.zip && unzip master.zip && rm master.zip && mv ./webpack-boilerplate-master/{.,}* ./ && rm -r ./webpack-boilerplate-master
-```
+### Setup
+Install dependencies:
 
-## Setup
-Install dependencies
 ```sh
 $ npm install
 ```
 
-## Development
+### Project layout
+
+```
+./index.ejs  <-- where to include other template files
+./templates/  <-- where partial templates live
+./assets/styles  <-- hello styles!  scss flavor
+./assets/images  <-- hello images!
+./app  <-- JS used to build the page lives here
+./scripts  <-- a few utility scripts for munging data
+```
+
+### Development
+
 Run the local webpack-dev-server with livereload and autocompile on [http://localhost:8080/](http://localhost:8080/)
+
 ```sh
 $ npm run dev
 ```
+
+A few notes:
+ - The page is broken into sections, where each section generally has its own EJS/JS/SCSS files.  They need to be added to `./index.ejs`, `./app/index.js` and `./assets/styles/index.scss` respectively.
+ - The build process uses [stylelint](https://github.com/stylelint/stylelint) to enforce conventions for SCSS.  If the compilation of the project fails during development due to a style violation, the CSS won't hot-reload in the browser.
+ - Keep an eye on the terminal window showing the build process while working on this.  If you see errors, you may need to fix them and restart the dev server.
+ - Background images in SCSS need to reference images via a module resolution, not path.  For example, this is correct: `background-image: url(~images/my-picture.jpg)`.
+
 ## Deployment
-Build the current application
+Build the current application:
+
 ```sh
 $ npm run build
 ```
 
-## [webpack](https://webpack.js.org/)
-If you're not familiar with webpack, the [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) will serve the static files in your build folder and watch your source files for changes.
-When changes are made the bundle will be recompiled. This modified bundle is served from memory at the relative path specified in publicPath.
+...and deploy to the appropriate location!
