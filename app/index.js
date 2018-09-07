@@ -6,6 +6,6 @@
 import 'styles/index.scss'
 
 // App!
-import 'headerFooter'
 import 'baseMap'
 import 'iceAndSnow'
+import 'iceAndSnowObs'

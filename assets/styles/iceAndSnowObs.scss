@@ -1,0 +1,65 @@
+.ice-and-snow-obs__scroll-container {
+  padding: 10vh 0;
+  border-top: 1px solid #888;
+  background-color: #fff;
+  position: relative;
+  height: 300vh;
+
+  .scroll__graphic {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+    margin-left: 40vw;
+    padding-bottom: 80vh;
+
+    .ice-and-snow-obs__images {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        height: 80vh;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        &.hidden {
+          opacity: 0 !important;
+          transition: opacity 1s ease;
+        }
+
+        &.shown {
+          opacity: 1;
+          transition: opacity 1s ease;
+        }
+      }
+    }
+  }
+
+  .scroll__text {
+    position: relative;
+    top: -60vh;
+  }
+
+  .step {
+    width: 25vw;
+    margin: 50vh 0 50vh 5vw;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

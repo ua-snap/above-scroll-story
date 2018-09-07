@@ -34,7 +34,8 @@ module.exports = {
         ],
         alias: {
           '@': dirAssets,
-          node_modules: dirNode
+          node_modules: dirNode,
+          'images': path.join(dirAssets, 'images')
         }
     },
     plugins: [
@@ -48,7 +49,7 @@ module.exports = {
         new MiniCssExtractPlugin(),
         new StyleLintPlugin({
           context: path.join(dirAssets, 'styles')
-        }),
+        })
     ],
     module: {
         rules: [

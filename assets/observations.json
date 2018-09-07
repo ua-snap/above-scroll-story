@@ -1,0 +1,425 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -143.644223,
+          63.132602
+        ]
+      },
+      "properties": {
+        "id": "38",
+        "harvester": "Matt Snyder",
+        "date": "3/14/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "MS_03_14_16_1058",
+        "photoFileNames": "MS_03_14_16_1058.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Open lead on Tok River.",
+        "whatisImpact": "Restricts ice travel plane landing) - happened much sooner than normal this spring.",
+        "tripPurpose": "Trapping",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2016",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "This change is common, I see it everywhere",
+        "field1": "",
+        "notes": "Open leads appeared much sooner this spring (2016) than in previous years.",
+        "sensitivity": "-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -143.382595,
+          62.940689
+        ]
+      },
+      "properties": {
+        "id": "50",
+        "harvester": "Matt Snyder",
+        "date": "6/23/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "MS_06_23_16_1151",
+        "photoFileNames": "MS_06_23_16_1151.jpg;MS_06_23_16_1151b.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Extreme amount of lake grass.",
+        "whatisImpact": "Harder to get around with outborads. Have switched to a go devil style outboard.",
+        "tripPurpose": "Hunting, Fishing",
+        "frequencyOfObservation": "Observed yearly",
+        "yearFirstObserved": "2006",
+        "safetyImpact": "Moderate affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "Change seems more extreme in last 10 years.",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -146.424949,
+          67.014327
+        ]
+      },
+      "properties": {
+        "id": "57",
+        "harvester": "Joshua Roberts",
+        "date": "5/15/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "JLR_05_15_16_1552",
+        "photoFileNames": "JLR_05_15_16_1552.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "River bank erosion. River bank was flat across here about 2 years ago.",
+        "whatisImpact": "Erosion wiped out road, you can't drive across anymore, you have to walk. Pretty soon water might flow into a nearby man-made pond.",
+        "tripPurpose": "Village Travel",
+        "frequencyOfObservation": "Not applicable",
+        "yearFirstObserved": "2013",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "\"Hungwinja\" - name of place.",
+        "sensitivity": "-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -145.176638,
+          63.854328
+        ]
+      },
+      "properties": {
+        "id": "63",
+        "harvester": "Carl Taylor",
+        "date": "4/27/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "CT_04_27_16_1435",
+        "photoFileNames": "CT_04_27_1435.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Trees blown down from winter winds.",
+        "whatisImpact": "Trees across trails make access more difficult. Must carry a saw often. Worst winds usually during winter months.",
+        "tripPurpose": "Hunting, Trapping, Gathering (wood, berries)",
+        "frequencyOfObservation": "Observed every few years",
+        "yearFirstObserved": "2013",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "Trees always fall down, last few years have been much worse.",
+        "sensitivity": "-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -152.2816,
+          63.898993
+        ]
+      },
+      "properties": {
+        "id": "80",
+        "harvester": "Pamela Green",
+        "date": "5/6/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "PG_05_06_16_1458",
+        "photoFileNames": "PG-05-06-16-1458.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Ice coming up over the road during break-up, due to unusually high water at freeze-up and blocking travel along the shoreline to main community hub and runway at south end of lake. Also blocks access to early birds and fish.",
+        "whatisImpact": "This is the only open spring traveling access that is safe on the west shore of the lake during breakup to get to the runway for medical or mail or groceries coming in by plane, ice is too rotten for travel and woods have snow patches yet.",
+        "tripPurpose": "Hunting, Fishing, Village Travel",
+        "frequencyOfObservation": "Observed yearly",
+        "yearFirstObserved": "2014",
+        "safetyImpact": "Strong affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -146.304011,
+          67.083389
+        ]
+      },
+      "properties": {
+        "id": "90",
+        "harvester": "Eddy Frank",
+        "date": "7/10/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "EF_07_10_16_0911",
+        "photoFileNames": "EF_07_10_16_0911A.jpg;EF_07_10_16_0911B.jpg;EF_07_10_16_0911C.jpg;EF_07_10_16_0911D.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Water on the road towards the mountain, restricting access to berry picking (blueberry, cranberry) and fall moose hunting.",
+        "whatisImpact": "The water is caused by runoff from the mountain - fire north of here opened ways for water to come down.",
+        "tripPurpose": "Hunting, Gathering (berries)",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2004",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "2004 = large fire on mountain.",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.202133,
+          66.278077
+        ]
+      },
+      "properties": {
+        "id": "98",
+        "harvester": "Cliff Adams",
+        "date": "6/5/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "CA_06_05_16_2228",
+        "photoFileNames": "CA_06_05_16_2228.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Lake drying on north side of river (sunny side). Many hunting areas turned into meadows.",
+        "whatisImpact": "Need to find new hunting and trapping areas (requires traveling further, 10 miles in past, 40 miles today). Areas are \"shrubbing over\". Easier winter trail (no ice or water).",
+        "tripPurpose": "Hunting",
+        "frequencyOfObservation": "Observed yearly",
+        "yearFirstObserved": "1987",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "First started noticing this in the late 1980s, but it has been increasing over time. Weak effect on safety, increased safety. Change is being seen on the north side of the river.",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.593602,
+          66.333589
+        ]
+      },
+      "properties": {
+        "id": "100",
+        "harvester": "Cliff Adams",
+        "date": "6/18/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "CA_06_18_16_2019B-E, 2020",
+        "photoFileNames": "CA_06_18_16_2019B.jpg;CA_06_18_16_2019C.jpg;CA_06_18_16_2019D.jpg;CA_06_18_16_2019E.jpg;CA_06_18_16_2019F.jpg;CA_06_18_16_2020.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Huge chunks of land eroding along the Yukon River. Large sections of shoreline falling in, even in areas that are not exposed to current (maybe just sunny).",
+        "whatisImpact": "Changes navigable channel. Rate of change has increased. Need to find new fishing spots. Trees falling on you, rolling waves. Changes historic fishing area for the first time.",
+        "tripPurpose": "Fishing",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2016",
+        "safetyImpact": "Weak affect",
+        "commonInOtherPlaces": "I haven't seen this change anywhere else",
+        "field1": "",
+        "notes": "2016 = change was way worse, way warmer temperature. There is riverbank erosion in other areas, but this is one of the most severely affected areas. Trying new spots all the time now, regulations adda nother layer of challenges.",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.629961,
+          65.878483
+        ]
+      },
+      "properties": {
+        "id": "107",
+        "harvester": "Eddie Wiehl",
+        "date": "8/16/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "EW_EW_08_16_16_1816A-B",
+        "photoFileNames": "EW_08_16_16_1816A.jpg;EW_08_16_16_1816B.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Erosion, mud slide.",
+        "whatisImpact": "Loads debris in water, changes boat travel.",
+        "tripPurpose": "Village Travel",
+        "frequencyOfObservation": "Observed every few decades",
+        "yearFirstObserved": "2016",
+        "safetyImpact": "Moderate affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "This was seen more this year than in previous years. See some in past, but not as many.",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -145.211661,
+          63.841497
+        ]
+      },
+      "properties": {
+        "id": "122",
+        "harvester": "Carl Taylor",
+        "date": "9/12/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "CT_09_06_16_1031A-B",
+        "photoFileNames": "CT_09_12_16_1031A.jpg;CT_09_12_16_1031B.jpg",
+        "condition": "Ice conditions",
+        "whatIsPictured": "Sand deposited on trail from washouts.",
+        "whatisImpact": "Just a photo to show how much material has been moved. Actually makes travel in this location easier now.",
+        "tripPurpose": "Hunting, Gathering",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2012",
+        "safetyImpact": "Moderate affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "Some places on trail good, others worse (this location is better). First seen 2-4 years ago.",
+        "sensitivity": "1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -143.258516,
+          62.519254
+        ]
+      },
+      "properties": {
+        "id": "159",
+        "harvester": "Barb Pine",
+        "date": "2/5/17",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "BP_02_05_17_1123",
+        "photoFileNames": "BP_02_05_17_1123.jpg",
+        "condition": "Snow conditions",
+        "whatIsPictured": "The lack of snow cover on the trail. You can see dirt on the trail in many places.",
+        "whatisImpact": "This little snow is hard on snow machines. This is the first time I have been here in the winter. Locals say the snow is lacking. It has been only 2 weeks that there is enough snow to make a trail to the lakes to fish.",
+        "tripPurpose": "Fishing",
+        "frequencyOfObservation": "Observed every few years",
+        "yearFirstObserved": "2014",
+        "safetyImpact": "No affect",
+        "commonInOtherPlaces": "I have seen this change in some other areas",
+        "field1": "",
+        "notes": "",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          159.802064,
+          64.022221
+        ]
+      },
+      "properties": {
+        "id": "228",
+        "harvester": "Joe Turner",
+        "date": "3/3/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "JT_03_03_16_1233A-C",
+        "photoFileNames": "JT_03_03_16_1233A.jpg;JT_03_03_16_1233B.jpg;JT_03_03_16_1233C.jpg",
+        "condition": "Snow conditions",
+        "whatIsPictured": "No snow, driving on a snowmachine from Kaltag to Unalakleet. Creeks running open with open water.",
+        "whatisImpact": "Low snow and warm temps meant snowmachine kept overheating, had to make many stops.",
+        "tripPurpose": "Hunting, Village Travel (Basketball game)",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2013",
+        "safetyImpact": "Strong affect",
+        "commonInOtherPlaces": "This change is common, I see it everywhere",
+        "field1": "",
+        "notes": "hunting wolves",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          160.719683,
+          63.872165
+        ]
+      },
+      "properties": {
+        "id": "229",
+        "harvester": "Joe Turner",
+        "date": "3/6/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "JT_03_06_16_1005",
+        "photoFileNames": "JT_03_06_16_1005.jpg",
+        "condition": "Snow conditions",
+        "whatIsPictured": "Traveling back from Unalakleet after the basketball tournament.",
+        "whatisImpact": "A lot more water on rivers and creeks, makes snowmachine travel dangerous.",
+        "tripPurpose": "Hunting, Village Travel",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2013",
+        "safetyImpact": "Strong affect",
+        "commonInOtherPlaces": "This change is common, I see it everywhere",
+        "field1": "",
+        "notes": "hunting wolves",
+        "sensitivity": "-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          158.949596,
+          64.266399
+        ]
+      },
+      "properties": {
+        "id": "232",
+        "harvester": "Joe Turner",
+        "date": "3/6/16",
+        "permissionGranted": "",
+        "mapVentures": "1",
+        "photoIdPrefix": "JT_03_06_16_1321",
+        "photoFileNames": "JT_03_06_16_1321.jpg",
+        "condition": "Snow conditions",
+        "whatIsPictured": "Open creek with wooden bridge for snowmachine crossings.",
+        "whatisImpact": "Creek should be frozen this time of year. Makes crossings dangerous (especially if no bridges present).",
+        "tripPurpose": "Hunting, Village travel",
+        "frequencyOfObservation": "Observed seasonally",
+        "yearFirstObserved": "2013",
+        "safetyImpact": "Strong affect",
+        "commonInOtherPlaces": "This change is common, I see it everywhere",
+        "field1": "",
+        "notes": "hunting wolves",
+        "sensitivity": "-2"
+      }
+    }
+  ]
+}

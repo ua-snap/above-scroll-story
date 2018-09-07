@@ -26,13 +26,14 @@ var mapOptions = {
   dragging: false
 }
 
-var baseLayerOptions = {
+export var baseLayerOptions = {
   transparent: true,
   srs: 'EPSG:3338',
   format: 'image/png',
   version: '1.3',
   continuousWorld: true // needed for non-3857 projs
 }
+
 var baseLayer = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
   {
     ...baseLayerOptions,
@@ -46,20 +47,6 @@ var placesLayer = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
     zIndex: 1000
   }
 )
-// var temps1970s = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
-//   {
-//     ...baseLayerOptions,
-//     layers: ['nasa_above:wintertemp_1970s_tcc'],
-//     opacity: 0.8
-//   }
-// )
-// var temps2010s = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
-//   {
-//     ...baseLayerOptions,
-//     layers: ['nasa_above:wintertemp_2010s_tcc'],
-//     opacity: 0.8
-//   }
-// )
 
 export function getBaseMap (divId) {
   var map = L.map(divId, mapOptions)
