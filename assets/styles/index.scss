@@ -14,6 +14,7 @@
 
 // General styles we're using for thematic areas
 @import 'narrative';
+@import 'observationsScroller';
 
 // Globally-used styles for vendor libs
 @import '~leaflet/dist/leaflet.css';
@@ -23,8 +24,7 @@
 @import 'title';
 @import 'headerFooter';
 @import 'introduction';
-@import 'iceAndSnow';
-@import 'iceAndSnowObs';
+@import 'iceObservations';
 
 html,
 body {
@@ -46,4 +46,21 @@ h5 {
 
 h1 {
   font-size: 36pt;
+}
+
+section.additional-information {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 2em 0 1em;
+
+  & h1 {
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    line-height: 1;
+    margin: -9px 0 0;
+    background: inherit;
+    padding: 0 1ex;
+  }
 }

@@ -1,6 +1,7 @@
 {
   "name": "NASA-Above",
   "version": "0.0.1",
+  "repository": "https://github.com/ua-snap/above-scroll-story.git",
   "description": "Narrative story of local observations of impacts of climate change",
   "author": "Scenarios Network for Alaska and Arctic Planning",
   "license": "MIT",
@@ -16,7 +17,8 @@
     "picnic": "^6.5.0",
     "proj4leaflet": "^1.0.2",
     "scrollama": "^1.4.3",
-    "scrollmonitor": "^1.2.4"
+    "scrollmonitor": "^1.2.4",
+    "vanilla-lazyload": "^10.16.1"
   },
   "devDependencies": {
     "ajv": "^6.5.3",
