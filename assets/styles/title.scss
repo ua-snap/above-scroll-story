@@ -1,10 +1,25 @@
 .title {
-  background: url('~images/obs/dogs-lake-margin-minchumina-water.jpg') no-repeat;
-  background-size: cover;
-  height: 90vh;
+  height: 85vh;
+
+  @media (max-width: 1400px) {
+    background: url('~images/obs/dogs-lake-margin-minchumina-water.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: 1400px) {
+    background: url('~images/title-page-full-resolution.jpg') no-repeat;
+    background-size: cover;
+  }
 
   h1 {
+    position: absolute;
+    width: 30vw;
+    line-height: 1.25;
+    margin: 30vh 0 0 1em;
     color: #fff;
-    margin: 0 5vw;
+
+    @media (max-width: 1400px) {
+      font-size: 30pt;
+    }
   }
 }

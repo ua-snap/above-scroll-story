@@ -2,19 +2,24 @@
 
 .narrative {
   // Center nicely
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     width: 40em;
   }
 
-  max-width: 1400px;
-  margin: 5vh auto;
+  max-width: 60em;
+  margin: 3em auto;
 
-  // Drop cap
-  p:first-of-type::first-letter {
-    font-size: 4rem;
-    padding: 0.25rem 0.15em 0 0;
-    margin: 0;
-    float: left;
-    line-height: 0.9;
+  p {
+    font-size: 14pt;
+    line-height: 1.75;
+
+    // Drop cap
+    &:first-of-type::first-letter {
+      font-size: 48pt;
+      padding: 8pt 7pt 0 0;
+      margin: 0;
+      float: left;
+      line-height: 0.9;
+    }
   }
 }

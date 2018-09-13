@@ -17,7 +17,7 @@ Some of these styles are fiddly; in particular, height and position properties.
     position: -webkit-sticky;
     position: sticky;
     top: 10vh;
-    margin-left: 40vw;
+    margin-left: 35vw;
     padding-bottom: 80vh;
 
     .observations__images {
@@ -26,7 +26,8 @@ Some of these styles are fiddly; in particular, height and position properties.
       img {
         position: absolute;
         top: 0;
-        height: 80vh;
+        max-height: 80vh;
+        max-width: 60vw;
 
         &:first-of-type {
           margin-top: 0;

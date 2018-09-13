@@ -3,6 +3,7 @@ const GeoJSON = require('geojson')
 const util = require('util')
 const fs = require('fs')
 const _ = require('lodash')
+const moment = require('moment')
 
 csvFilePath = './above-observations.csv'
 
@@ -26,6 +27,7 @@ csv({
 
   var template = _.template(`
 <div class="observation" data-observation-id="<%= id %>">
+  <a name="<%= category %>-observation-<%= id %>"></a>
   <div class="observation__date"><%= date %></div>
   <div class="observation__author"><%= observer %></div>
   <div class="observation__description">
@@ -40,9 +42,11 @@ csv({
   // Also general HTML for use in Narrative
   var html = ''
   _.each(jsonObj, (obs) => {
+    var parsedDate = moment(obs.date, 'DD-MMM-YY').format('MMMM D, YYYY')
     html += template({
       id: obs.id,
-      date: obs.date,
+      category: obs.condition.replace(/\s+/g, '-').toLowerCase(),
+      date: parsedDate,
       observer: obs.harvester,
       pictured: obs.whatIsPictured,
       impact: obs.whatIsImpact,

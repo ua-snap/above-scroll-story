@@ -11,9 +11,14 @@ var lazyLoaded = new LazyLoad({ // eslint-disable-line
   elements_selector: '.lazy'
 })
 
-// Observations are in the global scope to be referenced by subsections
-import observations from '@/observations' // eslint-disable-line
+// Update URL & restore link location if relevant
+import 'urlUpdater'
+if (window.location.hash) {
+  var el = document.querySelector('a[name="' + window.location.hash + '"]')
+  if (el) {
+    el.scrollIntoView()
+  }
+}
 
-// App!
-import 'baseMap'
+// import 'baseMap'
 import 'iceObservations'
