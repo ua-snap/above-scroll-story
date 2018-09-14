@@ -1,3 +1,5 @@
+// This script takes two CSVs and produces GeoJSON/HTML output.
+
 const csv = require('csvtojson')
 const GeoJSON = require('geojson')
 const util = require('util')
@@ -5,8 +7,30 @@ const fs = require('fs')
 const _ = require('lodash')
 const moment = require('moment')
 
-csvFilePath = './above-observations.csv'
+var csvFilePath = './above-observations.csv'
+var fullCsvFilePath = './all-observations.csv'
 
+csv({
+  noheader: false,
+  headers: [
+    'id','date','lat','lng','condition'
+  ]
+})
+.fromFile(fullCsvFilePath)
+.then((jsonObj) => {
+  var geojson = GeoJSON.parse(jsonObj, { Point: ['lat', 'lng'] })
+  var output = JSON.stringify(geojson)
+  console.log(output)
+
+  fs.writeFile('/tmp/all-observations.geojson', output, function(err) {
+    if(err) {
+      return console.log(err)
+    }
+  })
+});
+
+// Just the observations we're using in the narrative, make a GeoJSON of all properties,
+// and an HTML from template.
 csv({
   noheader: false,
   headers: [

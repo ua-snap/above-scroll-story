@@ -1,0 +1,19 @@
+.header {
+  background: #fff;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  border-top: 3px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 3px solid #888;
+
+  img {
+    height: 4em;
+    margin: 0 1em;
+
+    &[alt="SNAP logo"] {
+      height: 3.2em;
+      position: relative;
+      bottom: 0.2em;
+    }
+  }
+}

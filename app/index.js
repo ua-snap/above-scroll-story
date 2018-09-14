@@ -13,12 +13,16 @@ var lazyLoaded = new LazyLoad({ // eslint-disable-line
 
 // Update URL & restore link location if relevant
 import 'urlUpdater'
+const scrollToElement = require('scroll-to-element')
 if (window.location.hash) {
   var el = document.querySelector('a[name="' + window.location.hash + '"]')
   if (el) {
-    el.scrollIntoView()
+    scrollToElement(el, {
+      offset: -50
+    })
   }
 }
 
-// import 'baseMap'
+import 'baseMap'
+import 'observationMapScroller'
 import 'iceObservations'
