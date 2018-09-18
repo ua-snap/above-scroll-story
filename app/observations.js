@@ -1,0 +1,28 @@
+import scrollama from 'scrollama'
+
+export function setupObservationsScroller (selector) {
+  var images = document.querySelectorAll(selector + ' img')
+  let _scroller = scrollama()
+
+  // setup the instance, pass callback functions
+  _scroller
+  .setup(
+    {
+      step: selector + ' .scroll__text .step',
+      container: selector,
+      graphic: selector + ' .scroll__graphic'
+    }
+  ).onStepEnter(
+    (obj) => {
+      images.forEach((img, index) => {
+        if (obj.index === index) {
+          images[index].classList.add('shown')
+          images[index].classList.remove('hidden')
+        } else {
+          images[index].classList.add('hidden')
+          images[index].classList.remove('shown')
+        }
+      })
+    }
+  )
+}

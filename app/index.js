@@ -23,6 +23,16 @@ if (window.location.hash) {
   }
 }
 
+// Shared code
 import 'baseMap'
+import { setupObservationsScroller } from 'observations'
+
+// Set up photo observation scrollers
+setupObservationsScroller('.ice-observations')
+setupObservationsScroller('.snow-observations')
+setupObservationsScroller('.river-observations')
+setupObservationsScroller('.land-observations')
+setupObservationsScroller('.vegetation-observations')
+
+// Other region-specific code
 import 'observationMapScroller'
-import 'iceObservations'

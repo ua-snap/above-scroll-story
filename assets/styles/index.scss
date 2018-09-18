@@ -12,7 +12,7 @@
 // Fonts!
 @import url('https://fonts.googleapis.com/css?family=Cabin:700|Cardo');
 
-// General styles we're using for thematic areas
+// General styles we're using for thematic & multiple areas
 @import 'narrative';
 @import 'observationsScroller';
 
@@ -25,7 +25,6 @@
 @import 'header';
 @import 'introduction';
 @import 'observationMapScroller';
-@import 'iceObservations';
 
 html,
 body {
