@@ -1,4 +1,4 @@
-.header {
+.logos {
   background: #fff;
   margin: 0;
   padding: 1em;
@@ -7,13 +7,9 @@
   border-bottom: 3px solid #888;
 
   img {
-    height: 4em;
+    max-height: 4em;
     margin: 0 1em;
-
-    &[alt="SNAP logo"] {
-      height: 3.2em;
-      position: relative;
-      bottom: 0.2em;
-    }
+    max-width: 7em;
+    vertical-align: middle;
   }
 }
