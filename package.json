@@ -15,6 +15,7 @@
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "lodash": "4.17.10",
     "picnic": "^6.5.0",
+    "plotly.js-basic-dist": "^1.41.2",
     "proj4leaflet": "^1.0.2",
     "scroll-to-element": "^2.0.2",
     "scrollama": "^1.4.3",

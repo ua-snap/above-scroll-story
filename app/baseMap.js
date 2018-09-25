@@ -34,23 +34,28 @@ export var baseLayerOptions = {
   continuousWorld: true // needed for non-3857 projs
 }
 
-var baseLayer = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
-  {
-    ...baseLayerOptions,
-    layers: ['alaska_osm']
-  }
-)
-var placesLayer = L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
-  {
-    ...baseLayerOptions,
-    layers: ['alaska_places_osm_3338'],
-    zIndex: 1000
-  }
-)
+function getBaseLayer () {
+  return L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
+    {
+      ...baseLayerOptions,
+      layers: ['alaska_osm']
+    }
+  )
+}
+
+function getPlacesLayer () {
+  return L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
+    {
+      ...baseLayerOptions,
+      layers: ['alaska_places_osm_3338'],
+      zIndex: 1000
+    }
+  )
+}
 
 export function getBaseMap (divId) {
   var map = L.map(divId, mapOptions)
-  baseLayer.addTo(map)
-  placesLayer.addTo(map)
+  getBaseLayer().addTo(map)
+  getPlacesLayer().addTo(map)
   return map
 }

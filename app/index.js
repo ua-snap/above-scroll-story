@@ -36,3 +36,5 @@ setupObservationsScroller('.vegetation-observations')
 
 // Other region-specific code
 import 'observationMapScroller'
+import 'tempsAndFrozenSeasonMapScroller'
+import 'areaBurnedPlot'
