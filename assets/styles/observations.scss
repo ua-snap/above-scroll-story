@@ -1,0 +1,179 @@
+/*
+
+This file contains common styles for formatting the page sections
+with scrolling photos/observation text (bottom), and specific modifications
+for specific regions (these rules come first) & data displays.
+
+Some of these styles are fiddly; in particular, height and position properties.
+
+*/
+
+.ice-observations.observations__scroll-container {
+  height: 540vh;
+}
+
+.snow-observations.observations__scroll-container {
+  min-height: 375vh;
+}
+
+.river-observations.observations__scroll-container {
+  height: 390vh;
+
+  figure {
+    padding: 0;
+    margin: 0;
+
+    img {
+      width: 60vw;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.land-observations.observations__scroll-container {
+  height: 210vh;
+}
+
+.vegetation-observations.observations__scroll-container {
+  height: 475vh;
+
+  figure.plotly {
+    height: 50vh;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.historical-fires {
+  position: relative;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+
+  #historical-fires__map {
+    height: 100vh;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 25vh;
+    left: 10vh;
+    height: 50vh;
+    width: 30vh;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10000;
+  }
+}
+
+.observations__scroll-container {
+  padding: 10vh 0;
+  border-top: 1px solid #888;
+  background-color: #fff;
+  position: relative;
+  height: 300vh; /* Will probably be overridden by specific scrollers which need a different height */
+
+  .scroll__graphic {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10vh;
+    margin-left: 35vw;
+    padding-bottom: 80vh;
+
+    .observations__images {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        max-height: 80vh;
+        max-width: 60vw;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+
+        &.hidden {
+          opacity: 0 !important;
+          transition: opacity 1s ease;
+        }
+
+        &.shown {
+          opacity: 1;
+          transition: opacity 1s ease;
+        }
+      }
+
+      figure {
+        position: absolute;
+        top: 0;
+        max-height: 80vh;
+        max-width: 60vw;
+
+        &.hidden {
+          opacity: 0 !important;
+          transition: opacity 1s ease;
+        }
+
+        &.shown {
+          opacity: 1;
+          transition: opacity 1s ease;
+        }
+      }
+    }
+  }
+
+  .scroll__text {
+    position: relative;
+    top: -60vh;
+  }
+
+  .step {
+    width: 25vw;
+    margin: 50vh 0 50vh 5vw;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .observation {
+      h4 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      h5 {
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      h6 {
+        font-size: 1rem;
+        color: #666;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+
+      q {
+        font-style: italic;
+        display: block;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

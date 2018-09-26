@@ -38,3 +38,4 @@ setupObservationsScroller('.vegetation-observations')
 import 'observationMapScroller'
 import 'tempsAndFrozenSeasonMapScroller'
 import 'areaBurnedPlot'
+import 'historicalFiresMapScroller'

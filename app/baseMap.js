@@ -53,8 +53,8 @@ function getPlacesLayer () {
   )
 }
 
-export function getBaseMap (divId) {
-  var map = L.map(divId, mapOptions)
+export function getBaseMap (divId, options) {
+  var map = L.map(divId, { ...mapOptions, ...options })
   getBaseLayer().addTo(map)
   getPlacesLayer().addTo(map)
   return map

@@ -1,7 +1,7 @@
 import scrollama from 'scrollama'
 
 export function setupObservationsScroller (selector) {
-  var images = document.querySelectorAll(selector + ' img')
+  var images = document.querySelectorAll(selector + ' .observations__images > img, ' + selector + ' .observations__images > figure')
   let _scroller = scrollama()
 
   // setup the instance, pass callback functions
