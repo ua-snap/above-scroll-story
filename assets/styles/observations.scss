@@ -13,11 +13,11 @@ Some of these styles are fiddly; in particular, height and position properties.
 }
 
 .snow-observations.observations__scroll-container {
-  min-height: 400vh;
+  min-height: 405vh;
 }
 
 .river-observations.observations__scroll-container {
-  height: 390vh;
+  height: 420vh;
 
   figure {
     padding: 0;
@@ -32,11 +32,11 @@ Some of these styles are fiddly; in particular, height and position properties.
 }
 
 .land-observations.observations__scroll-container {
-  height: 210vh;
+  height: 568vh;
 }
 
 .vegetation-observations.observations__scroll-container {
-  height: 475vh;
+  height: 525vh;
 
   figure.plotly {
     height: 50vh;

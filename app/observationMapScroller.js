@@ -47,13 +47,7 @@ var observationLayers = [
   // Vegetation
   observations.features.filter(e => {
     return /.*Veg*/g.test(e.properties.condition)
-  }),
-  // Weather & other observations
-  observations.features.filter(e => {
-    return /Other.*/.test(e.properties.condition) // not global
-  }).concat(observations.features.filter(e => {
-    return /.*Weather*/g.test(e.properties.condition)
-  }))
+  })
 ].map(
   (features, index) => {
     return L.geoJSON({
