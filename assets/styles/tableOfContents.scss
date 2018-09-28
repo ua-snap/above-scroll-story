@@ -1,0 +1,20 @@
+.table-of-contents {
+  padding: 4em 2em;
+  background-color: #f1f6f9;
+  text-align: center;
+  border-bottom: 1px solid #333;
+
+  h2 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36pt;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  ol {
+    font-size: 18pt;
+    list-style-type: upper-roman;
+  }
+}

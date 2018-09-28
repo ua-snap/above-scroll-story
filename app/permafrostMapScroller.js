@@ -2,8 +2,10 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
+import observationLayers from 'observationMapLayers'
 
 var permafrostMap = getBaseMap('permafrost-map__map')
+observationLayers[2].addTo(permafrostMap)
 getCommunitiesLayer().addTo(permafrostMap)
 
 // Map an array of properties to DOM reference for an

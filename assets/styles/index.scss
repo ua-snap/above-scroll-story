@@ -10,7 +10,7 @@
 @import '~picnic/src/plugins/generic/plugin';
 
 // Fonts!
-@import url('https://fonts.googleapis.com/css?family=Cabin:700|Cardo');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400i,700|Cardo');
 
 // General styles we're using for thematic & multiple areas
 @import 'narrative';
@@ -23,11 +23,13 @@
 // Styles for page areas!
 @import 'title';
 @import 'logos';
+@import 'tableOfContents';
 @import 'introduction';
 @import 'observationMapScroller';
-@import 'tempsAndFrozenSeasonMapScroller';
+@import 'winterTempsMapScroller';
 @import 'permafrostMapScroller';
 @import 'snowdayFractionMapScroller';
+@import 'conclusion';
 
 html,
 body {
@@ -45,25 +47,19 @@ h3,
 h4,
 h5 {
   font-family: 'Cabin', sans-serif;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 36pt;
 }
 
-section.additional-information {
-  position: relative;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 2em 0 1em;
-
-  & h1 {
-    position: absolute;
-    top: 0;
-    font-size: 18px;
-    line-height: 1;
-    margin: -9px 0 0;
-    background: inherit;
-    padding: 0 1ex;
-  }
+// Anywhere that the community names are put onto the map,
+// these styles are needed.
+.community-divicon {
+  font-weight: 700;
+  width: 10em !important;
+  margin-left: 10px !important;
+  margin-top: -9px !important;
+  text-shadow: 0 0 2px #fff;
 }

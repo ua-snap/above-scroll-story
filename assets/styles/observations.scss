@@ -64,6 +64,33 @@ Some of these styles are fiddly; in particular, height and position properties.
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 10000;
+
+    table td div {
+      height: 2em;
+      width: 2em;
+      padding-right: 1em;
+      margin-right: 1em;
+
+      &.class-1 {
+        background-color: #ffffb3;
+      }
+
+      &.class-2 {
+        background-color: #8dd3c7;
+      }
+
+      &.class-3 {
+        background-color: #bebada;
+      }
+
+      &.class-4 {
+        background-color: #80b1d3;
+      }
+
+      &.class-5 {
+        background-color: #fb8072;
+      }
+    }
   }
 }
 

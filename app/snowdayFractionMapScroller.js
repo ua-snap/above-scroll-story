@@ -2,8 +2,10 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
+import observationLayers from 'observationMapLayers'
 
 var snowdayFractionMap = getBaseMap('snowday-fraction-map__map')
+observationLayers[1].addTo(snowdayFractionMap)
 getCommunitiesLayer().addTo(snowdayFractionMap)
 
 // Map an array of properties to DOM reference for an

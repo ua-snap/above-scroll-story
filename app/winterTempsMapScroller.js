@@ -2,8 +2,10 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
+import observationLayers from 'observationMapLayers'
 
 var tempsAndFrozenMap = getBaseMap('ice-and-snow__map')
+observationLayers[0].addTo(tempsAndFrozenMap)
 getCommunitiesLayer().addTo(tempsAndFrozenMap)
 
 var tempsFrozenSeasonMapLayers = []

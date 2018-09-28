@@ -97,16 +97,31 @@ const communities = {
 }
 
 export default function getCommunitiesLayer () {
-  return L.geoJSON(communities,
-    {
-      pointToLayer: (geoJsonPoint, latlng) => {
-        return L.circleMarker(latlng, {
-          stroke: false,
-          fillOpacity: 0.8,
-          radius: 5,
-          fillColor: '#222'
-        })
+  return L.layerGroup([
+    L.geoJSON(communities,
+      {
+        pointToLayer: (geoJsonPoint, latlng) => {
+          return L.marker(latlng, {
+            icon: L.divIcon({
+              className: 'community-divicon',
+              html: geoJsonPoint.properties.name
+            }),
+            zIndex: 5000
+          })
+        }
       }
-    }
-  )
+    ),
+    L.geoJSON(communities,
+      {
+        pointToLayer: (geoJsonPoint, latlng) => {
+          return L.circleMarker(latlng, {
+            stroke: false,
+            fillOpacity: 0.8,
+            radius: 5,
+            fillColor: '#222'
+          })
+        }
+      }
+    )
+  ])
 }

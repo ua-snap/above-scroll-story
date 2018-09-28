@@ -1,0 +1,26 @@
+.conclusion {
+  background-color: #fff;
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  h2 {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 36pt;
+  }
+
+  figure {
+    text-align: center;
+
+    img {
+      height: 90vh;
+    }
+
+    figcaption {
+      display: block;
+      margin: 1em auto 2em;
+      width: 40em;
+    }
+  }
+}

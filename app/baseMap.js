@@ -43,19 +43,8 @@ function getBaseLayer () {
   )
 }
 
-function getPlacesLayer () {
-  return L.tileLayer.wms('http://52.24.100.6:8080/geoserver/wms',
-    {
-      ...baseLayerOptions,
-      layers: ['alaska_places_osm_3338'],
-      zIndex: 1000
-    }
-  )
-}
-
 export function getBaseMap (divId, options) {
   var map = L.map(divId, { ...mapOptions, ...options })
   getBaseLayer().addTo(map)
-  getPlacesLayer().addTo(map)
   return map
 }
