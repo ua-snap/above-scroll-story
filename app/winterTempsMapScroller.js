@@ -2,16 +2,16 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
-import observationLayers from 'observationMapLayers'
+import { layers } from 'observationMapLayers'
 
 var tempsAndFrozenMap = getBaseMap('ice-and-snow__map')
-observationLayers[0].addTo(tempsAndFrozenMap)
+layers[0].addTo(tempsAndFrozenMap)
 getCommunitiesLayer().addTo(tempsAndFrozenMap)
 
 var tempsFrozenSeasonMapLayers = []
 
 // Map an array of properties to DOM reference for an
-// instantiated Leaflet element.
+// instantiated Leaflet element
 tempsFrozenSeasonMapLayers = [
   'wintertemp_1970s_tcc',
   'wintertemp_2010s_tcc'
@@ -27,7 +27,16 @@ tempsFrozenSeasonMapLayers = [
   return document.getElementsByClassName(layerName)[0]
 })
 
+tempsFrozenSeasonMapLayers.unshift(
+  document.getElementsByClassName('leaflet-observations-ice-pane')[0]
+)
+
 const scroller = scrollama()
+var resizeHandler = function () {
+  scroller.resize()
+}
+window.addEventListener('resize', resizeHandler)
+
 function handleStepEnter (obj) {
   tempsFrozenSeasonMapLayers.forEach((layer, index) => {
     if (index === obj.index) {

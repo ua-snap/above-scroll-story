@@ -2,10 +2,10 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
-import observationLayers from 'observationMapLayers'
+import { layers } from 'observationMapLayers'
 
 var permafrostMap = getBaseMap('permafrost-map__map')
-observationLayers[2].addTo(permafrostMap)
+layers[2].addTo(permafrostMap)
 getCommunitiesLayer().addTo(permafrostMap)
 
 // Map an array of properties to DOM reference for an
@@ -25,7 +25,16 @@ var permafrostMapLayers = [
   return document.getElementsByClassName(layerName)[0]
 })
 
+permafrostMapLayers.unshift(
+  document.getElementsByClassName('leaflet-observations-erosion-pane')[0]
+)
+
 const scroller = scrollama()
+var resizeHandler = function () {
+  scroller.resize()
+}
+window.addEventListener('resize', resizeHandler)
+
 function handleStepEnter (obj) {
   permafrostMapLayers.forEach((layer, index) => {
     if (index === obj.index) {

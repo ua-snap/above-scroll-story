@@ -2,10 +2,10 @@ import { getBaseMap, baseLayerOptions } from 'baseMap'
 import L from 'leaflet'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
-import observationLayers from 'observationMapLayers'
+import { layers } from 'observationMapLayers'
 
 var snowdayFractionMap = getBaseMap('snowday-fraction-map__map')
-observationLayers[1].addTo(snowdayFractionMap)
+layers[1].addTo(snowdayFractionMap)
 getCommunitiesLayer().addTo(snowdayFractionMap)
 
 // Map an array of properties to DOM reference for an
@@ -25,15 +25,27 @@ var snowdayFractionMapLayers = [
   return document.getElementsByClassName(layerName)[0]
 })
 
+snowdayFractionMapLayers.unshift(
+  document.getElementsByClassName('leaflet-observations-snow-pane')[0]
+)
+
 const scroller = scrollama()
+var resizeHandler = function () {
+  scroller.resize()
+}
+window.addEventListener('resize', resizeHandler)
+
 function handleStepEnter (obj) {
+  console.log('---')
   snowdayFractionMapLayers.forEach((layer, index) => {
     if (index === obj.index) {
       layer.classList.remove('map-layer-invisible')
       layer.classList.add('map-layer-visible')
+      console.log('showing!', index, layer)
     } else {
       layer.classList.remove('map-layer-visible')
       layer.classList.add('map-layer-invisible')
+      console.log('hiding!', index, layer)
     }
   })
 }

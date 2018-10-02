@@ -1,0 +1,26 @@
+.citations {
+  font-size: 1rem;
+  border-left: 3px solid #828e82;
+  padding-left: 1em;
+
+  &::before {
+    content: 'Related research';
+    font-size: 1.2rem;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+  }
+
+  .citation {
+    margin: 1em 0 1.5em;
+
+    .citation__title {
+      font-style: italic;
+      display: block;
+    }
+
+    .citation__summary {
+      display: block;
+      margin: 0.2ex 0 0 1em;
+    }
+  }
+}

@@ -12,15 +12,15 @@ var observationColors = [
 
 // Filter categories for use in the scroller
 var observationLayers = [
-  // Ice
+  // 0 - Ice
   observations.features.filter(e => {
     return /.*Ice.*/g.test(e.properties.condition)
   }),
-  // Snow
+  // 1 - Snow
   observations.features.filter(e => {
     return /.*Snow.*/g.test(e.properties.condition)
   }),
-  // Erosion, sedimentation and water levels -- both land and water
+  // 2 - Erosion, sedimentation and water levels -- both land and water
   observations.features.filter(e => {
     return /.*Erosion.*/g.test(e.properties.condition)
   }).concat(observations.features.filter(e => {
@@ -28,18 +28,22 @@ var observationLayers = [
   })).concat(observations.features.filter(e => {
     return /.*Water*/g.test(e.properties.condition)
   })),
-  // Vegetation
+  // 3 - Vegetation
   observations.features.filter(e => {
     return /.*Veg*/g.test(e.properties.condition)
   })
-].map(
-  (features, index) => {
+]
+
+var paneNames = ['ice', 'snow', 'erosion', 'vegetation']
+var layers = paneNames.map(
+  (featureName, index) => {
     return L.geoJSON({
       'type': 'FeatureCollection',
-      'features': features
+      'features': observationLayers[index]
     }, {
       pointToLayer: (geoJsonPoint, latlng) => {
         return L.circleMarker(latlng, {
+          pane: 'observations-' + featureName,
           weight: 1.5,
           radius: 5,
           color: '#333',
@@ -51,4 +55,4 @@ var observationLayers = [
   }
 )
 
-export default observationLayers
+export { layers, paneNames }
