@@ -28,7 +28,7 @@ tempsFrozenSeasonMapLayers = [
 })
 
 tempsFrozenSeasonMapLayers.unshift(
-  document.getElementsByClassName('leaflet-observations-ice-pane')[0]
+  tempsAndFrozenMap.getPane('observations-ice')
 )
 
 const scroller = scrollama()

@@ -26,7 +26,7 @@ var snowdayFractionMapLayers = [
 })
 
 snowdayFractionMapLayers.unshift(
-  document.getElementsByClassName('leaflet-observations-snow-pane')[0]
+  snowdayFractionMap.getPane('observations-snow')
 )
 
 const scroller = scrollama()
@@ -36,16 +36,13 @@ var resizeHandler = function () {
 window.addEventListener('resize', resizeHandler)
 
 function handleStepEnter (obj) {
-  console.log('---')
   snowdayFractionMapLayers.forEach((layer, index) => {
     if (index === obj.index) {
       layer.classList.remove('map-layer-invisible')
       layer.classList.add('map-layer-visible')
-      console.log('showing!', index, layer)
     } else {
       layer.classList.remove('map-layer-visible')
       layer.classList.add('map-layer-invisible')
-      console.log('hiding!', index, layer)
     }
   })
 }

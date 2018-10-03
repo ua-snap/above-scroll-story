@@ -42,6 +42,12 @@ var layers = paneNames.map(
       'features': observationLayers[index]
     }, {
       pointToLayer: (geoJsonPoint, latlng) => {
+        if (latlng.lat === 0 || latlng.lng === 0) {
+          return false
+        }
+        if (latlng.lng > 0) {
+          latlng.lng = -latlng.lng
+        }
         return L.circleMarker(latlng, {
           pane: 'observations-' + featureName,
           weight: 1.5,

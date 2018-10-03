@@ -26,7 +26,7 @@ var permafrostMapLayers = [
 })
 
 permafrostMapLayers.unshift(
-  document.getElementsByClassName('leaflet-observations-erosion-pane')[0]
+  permafrostMap.getPane('observations-erosion')
 )
 
 const scroller = scrollama()
