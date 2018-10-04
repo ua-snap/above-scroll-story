@@ -36,6 +36,14 @@ var resizeHandler = function () {
 window.addEventListener('resize', resizeHandler)
 
 function handleStepEnter (obj) {
+  // If on 1st step, hide map legend.
+  if (obj.index !== 0) {
+    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.remove('hidden')
+    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.add('visible')
+  } else {
+    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.add('hidden')
+    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.remove('visible')
+  }
   snowdayFractionMapLayers.forEach((layer, index) => {
     if (index === obj.index) {
       layer.classList.remove('map-layer-invisible')

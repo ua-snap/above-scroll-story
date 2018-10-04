@@ -32,6 +32,7 @@
 @import 'snowdayFractionMapScroller';
 @import 'firesMapScroller';
 @import 'conclusion';
+@import 'credits';
 @import 'footer';
 
 html,
@@ -65,4 +66,8 @@ h1 {
   margin-left: 10px !important;
   margin-top: -9px !important;
   text-shadow: 0 0 2px #fff;
+}
+
+.leaflet-interactive {
+  cursor: default;
 }

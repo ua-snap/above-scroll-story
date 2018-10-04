@@ -1,1 +1,24 @@
 // Any specific styles for the introduction?
+.observations-figure {
+  background-color: #fff;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  position: relative;
+  height: 50vh;
+
+  #observations-pie-chart {
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 5vh;
+    right: 15vw;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    width: 30vw;
+    padding: 1em;
+  }
+}

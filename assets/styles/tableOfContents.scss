@@ -1,5 +1,5 @@
 .table-of-contents {
-  padding: 4em 2em;
+  padding: 2em 1em;
   background-color: #f1f6f9;
   text-align: center;
   border-bottom: 1px solid #333;
@@ -15,6 +15,20 @@
 
   ol {
     font-size: 18pt;
-    list-style-type: upper-roman;
+    list-style: none;
+    counter-reset: toc;
+    margin: 1em auto;
+    width: 40em;
+
+    li {
+      counter-increment: toc;
+      display: inline-block;
+      padding-right: 1ex;
+
+      &::before {
+        content: counter(toc) ". ";
+        font-weight: bold;
+      }
+    }
   }
 }

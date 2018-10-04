@@ -42,6 +42,16 @@
     top: 37vh;
     right: 5vw;
 
+    &.hidden {
+      opacity: 0 !important;
+      transition: opacity 1s ease;
+    }
+
+    &.visible {
+      opacity: 1 !important;
+      transition: opacity 1s ease;
+    }
+
     td div {
       height: 2em;
       width: 2em;

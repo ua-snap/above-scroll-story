@@ -3,11 +3,27 @@
   border-left: 3px solid #828e82;
   padding-left: 1em;
 
-  &::before {
-    content: 'Related research';
-    font-size: 1.2rem;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 700;
+  input,
+  label.citations__hide-content,
+  .citations__display-wrapper {
+    display: none;
+  }
+
+  label {
+    font-size: 16pt;
+    color: #00f;
+  }
+
+  input.citations__display-toggle:checked ~ label.citations__show-content {
+    display: none;
+  }
+
+  input.citations__display-toggle:checked ~ label.citations__hide-content {
+    display: block;
+  }
+
+  input.citations__display-toggle:checked ~ .citations__display-wrapper {
+    display: block;
   }
 
   .citation {
