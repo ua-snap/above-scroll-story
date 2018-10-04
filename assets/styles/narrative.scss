@@ -6,8 +6,16 @@
     width: 40em;
   }
 
+  h2 {
+    padding: 0;
+  }
+
   max-width: 60em;
-  margin: 3em auto;
+  margin: 1em auto 2em;
+
+  &.introduction {
+    margin-top: 3em; // breathing room
+  }
 
   p {
     font-size: 14pt;
@@ -27,4 +35,9 @@
     padding: 0;
     margin: 2em 0;
   }
+}
+
+.narrative.back-to-top {
+  margin: 0 auto;
+  padding: 1em 0;
 }

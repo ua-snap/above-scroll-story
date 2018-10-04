@@ -10,8 +10,10 @@
   }
 
   label {
-    font-size: 16pt;
-    color: #00f;
+    font-size: 10pt;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    color: #0065bd;
   }
 
   input.citations__display-toggle:checked ~ label.citations__show-content {
