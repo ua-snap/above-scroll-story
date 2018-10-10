@@ -9,17 +9,15 @@ Some of these styles are fiddly; in particular, height and position properties.
 */
 
 .ice-observations.observations__scroll-container {
-  min-height: 610vh;
-  height: 610vh;
+  height: 565vh;
 }
 
 .snow-observations.observations__scroll-container {
-  min-height: 405vh;
-  height: 405vh;
+  height: 420vh;
 }
 
 .river-observations.observations__scroll-container {
-  height: 420vh;
+  height: 445vh;
 
   figure {
     padding: 0;
@@ -34,7 +32,7 @@ Some of these styles are fiddly; in particular, height and position properties.
 }
 
 .land-observations.observations__scroll-container {
-  height: 568vh;
+  height: 572vh;
 }
 
 .vegetation-observations.observations__scroll-container {
@@ -49,7 +47,7 @@ Some of these styles are fiddly; in particular, height and position properties.
 }
 
 .historical-fires__scroll-container {
-  height: 200vh;
+  height: 225vh;
 }
 
 .observations__scroll-container {
@@ -115,11 +113,12 @@ Some of these styles are fiddly; in particular, height and position properties.
   }
 
   .step {
-    width: 25vw;
+    width: 30vw;
     margin: 50vh 0 50vh 5vw;
     position: relative;
     background: rgba(255, 255, 255, 0.8);
-    padding: 1em;
+    padding: 1em 1em 1em 0;
+    font-size: 75%;
 
     p {
       margin: 0;
@@ -128,6 +127,7 @@ Some of these styles are fiddly; in particular, height and position properties.
 
     &:first-of-type {
       margin-top: 0;
+      border-top: none;
     }
 
     &:last-of-type {
@@ -136,19 +136,19 @@ Some of these styles are fiddly; in particular, height and position properties.
 
     .observation {
       h4 {
-        font-size: 1.5rem;
+        font-size: 115%;
         margin: 0;
         padding: 0;
       }
 
       h5 {
-        font-size: 1.25rem;
+        font-size: 100%;
         margin: 0;
         padding: 0;
       }
 
       h6 {
-        font-size: 1rem;
+        font-size: 80%;
         color: #666;
         margin: 0;
         padding-bottom: 1rem;

@@ -15,6 +15,7 @@
 // General styles we're using for thematic & multiple areas
 @import 'narrative';
 @import 'observations';
+@import 'mapScrollers';
 @import 'citations';
 
 // Globally-used styles for vendor libs
@@ -26,10 +27,6 @@
 @import 'logos';
 @import 'tableOfContents';
 @import 'introduction';
-@import 'winterTempsMapScroller';
-@import 'snowdayFractionMapScroller';
-@import 'permafrostMapScroller';
-@import 'firesMapScroller';
 @import 'conclusion';
 @import 'credits';
 @import 'footer';
@@ -42,6 +39,9 @@ body {
 
   // Needed for some scrolling effects
   min-height: 2000px;
+
+  // Fancy fluid font size
+  font-size: calc(1vw + 1vh + 0.5vmin);
 }
 
 h1,
