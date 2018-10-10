@@ -9,11 +9,13 @@ Some of these styles are fiddly; in particular, height and position properties.
 */
 
 .ice-observations.observations__scroll-container {
-  height: 540vh;
+  min-height: 610vh;
+  height: 610vh;
 }
 
 .snow-observations.observations__scroll-container {
   min-height: 405vh;
+  height: 405vh;
 }
 
 .river-observations.observations__scroll-container {
