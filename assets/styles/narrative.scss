@@ -3,6 +3,7 @@
 .narrative {
   // Center nicely
   width: 30em;
+  font-size: 85%;
 
   @media (max-width: 1500px) {
     width: 40em;
@@ -20,8 +21,6 @@
   }
 
   p {
-    font-size: 90%;
-
     // Drop cap
     &:first-of-type::first-letter {
       font-size: 300%;

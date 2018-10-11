@@ -26,4 +26,4 @@ var layout = {
   }
 }
 
-Plotly.newPlot('observations-pie-chart', data, layout)
+Plotly.newPlot('observations-pie-chart', data, layout, { responsive: true })

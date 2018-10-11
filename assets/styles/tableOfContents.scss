@@ -1,23 +1,15 @@
 .table-of-contents {
-  padding: 2em 1em;
+  padding: 1em;
   background-color: #f1f6f9;
   text-align: center;
   border-bottom: 1px solid #333;
-
-  h2 {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 36pt;
-    font-weight: 400;
-    font-style: italic;
-  }
+  box-shadow: 0 1ex 1em 1ex #888;
 
   ol {
-    font-size: 18pt;
+    font-size: 110%;
     list-style: none;
     counter-reset: toc;
-    margin: 1em auto;
+    margin: 1ex auto;
     width: 40em;
 
     li {
@@ -28,6 +20,10 @@
       &::before {
         content: counter(toc) ". ";
         font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
       }
     }
   }

@@ -13,20 +13,21 @@
   }
 
   .title__text-block {
-    display: absolute;
+    display: relative;
     width: 40vw;
-    height: 100%;
+    height: 85vh;
     background-color: rgba(0, 0, 0, 0.25);
 
     h1 {
       position: absolute;
       width: 33vw;
       line-height: 1.25;
-      margin: 28vh 0 0 1em;
       color: #fff;
+      bottom: 17vh;
+      left: 1em;
 
       @media (max-width: 1400px) {
-        font-size: 28pt;
+        font-size: 140%;
       }
     }
   }

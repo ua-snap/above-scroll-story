@@ -32,4 +32,4 @@ var layout = {
   }
 }
 
-Plotly.newPlot('area-burned-plot', data, layout)
+Plotly.newPlot('area-burned-plot', data, layout, { responsive: true })
