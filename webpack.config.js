@@ -69,10 +69,12 @@ module.exports = {
             // BABEL
             {
                 test: /\.js$/,
-                loader: 'babel-loader',
                 exclude: /(node_modules)/,
-                query: {
-                    presets: [ 'stage-2' ]
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: [ '@babel/preset-env' ]
+                  }
                 }
             },
             {
