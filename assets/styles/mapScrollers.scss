@@ -3,6 +3,7 @@
   border-bottom: 1px solid #888;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
   position: relative;
+  background-color: #fff;
 
   .scroll__graphic {
     position: -webkit-sticky;
@@ -22,6 +23,7 @@
     background: rgba(255, 255, 255, 0.8);
     padding: 1em;
     font-size: 80%;
+    box-shadow: -5px 5px 10px -5px rgba(0, 0, 0, 80);
 
     p {
       margin: 0;
@@ -39,7 +41,9 @@
 
   .leaflet-map-wrapper {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    max-width: 1490px;
+    margin: 0 auto;
 
     .map-layer-invisible {
       opacity: 0 !important;

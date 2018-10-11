@@ -9,7 +9,7 @@ var observer = new IntersectionObserver(entries => {
   if (visible) {
     let target = visible.target.getAttribute('name')
     state = '#' + target
-    history.pushState({ section: target }, undefined, state)
+    history.replaceState({ section: target }, undefined, state)
   }
 })
 
