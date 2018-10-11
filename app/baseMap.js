@@ -32,6 +32,7 @@ export var baseLayerOptions = {
   srs: 'EPSG:3338',
   format: 'image/png',
   version: '1.3',
+  tiled: true, // needed for GeoWebCache
   continuousWorld: true // needed for non-3857 projs
 }
 
