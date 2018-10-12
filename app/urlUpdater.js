@@ -1,4 +1,5 @@
 const anchors = document.querySelectorAll('a[name]')
+import _ from 'lodash'
 
 var state
 
@@ -13,6 +14,6 @@ var observer = new IntersectionObserver(entries => {
   }
 })
 
-anchors.forEach(anchor => {
+_.each(anchors, anchor => {
   observer.observe(anchor)
 })
