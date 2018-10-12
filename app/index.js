@@ -39,7 +39,6 @@ setupObservationsScroller('.vegetation-observations')
 import 'winterTempsMapScroller'
 import 'permafrostMapScroller'
 import 'areaBurnedPlot'
-import 'observationsPie'
 import 'observationMapLayers'
 import 'historicalFiresMapScroller'
 import 'snowdayFractionMapScroller'

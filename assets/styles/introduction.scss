@@ -1,29 +1,58 @@
 // Any specific styles for the introduction?
 .observations-figure {
   background-color: #fff;
+  padding-top: 1em;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
   position: relative;
-  height: 65vh;
-  min-height: 285px;
+  height: 16em;
 
-  h3 {
-    text-align: center;
-  }
-
-  #observations-pie-chart {
-    width: 40vw;
-    height: 40vh;
+  table {
+    width: 18em;
+    margin-left: 1em;
+    font-size: 80%;
     position: absolute;
-    top: 15vh;
-    right: 15vw;
+    left: 50vw;
+
+    caption {
+      margin-bottom: 1em;
+    }
+
+    thead {
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    tbody {
+      font-size: 90%;
+
+      th {
+        text-align: left;
+
+        &[scope="row"] {
+          padding-right: 1em;
+        }
+      }
+
+      tr:first-of-type {
+        th,
+        td {
+          padding-top: 1ex;
+        }
+      }
+
+      td span.percent {
+        color: #444;
+        font-weight: 300;
+      }
+    }
   }
 
   figcaption {
     position: absolute;
-    top: 15vh;
-    left: 15vw;
-    width: 30vw;
+    right: 50vw;
+    margin-right: 1em;
+    width: 20em;
     padding: 1em;
     font-size: 80%;
   }
