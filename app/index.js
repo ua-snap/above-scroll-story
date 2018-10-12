@@ -5,6 +5,7 @@
 // Load application styles
 import 'styles/index.scss'
 import 'intersection-observer'
+import Stickyfill from 'stickyfilljs'
 
 // Lazy-load images below the fold
 import LazyLoad from 'vanilla-lazyload'
@@ -42,3 +43,7 @@ import 'areaBurnedPlot'
 import 'observationMapLayers'
 import 'historicalFiresMapScroller'
 import 'snowdayFractionMapScroller'
+
+// Polyfill position:sticky for IE11
+var elements = document.querySelectorAll('.sticky')
+Stickyfill.add(elements)
