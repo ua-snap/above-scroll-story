@@ -7,50 +7,18 @@
   position: relative;
   height: 16em;
 
-  table {
-    width: 18em;
+  #observations-chart {
+    width: 45vw;
     margin-left: 1em;
     font-size: 80%;
     position: absolute;
-    left: 50vw;
-
-    caption {
-      margin-bottom: 1em;
-    }
-
-    thead {
-      text-align: left;
-      border-bottom: 1px solid #ccc;
-    }
-
-    tbody {
-      font-size: 90%;
-
-      th {
-        text-align: left;
-
-        &[scope="row"] {
-          padding-right: 1em;
-        }
-      }
-
-      tr:first-of-type {
-        th,
-        td {
-          padding-top: 1ex;
-        }
-      }
-
-      td span.percent {
-        color: #444;
-        font-weight: 300;
-      }
-    }
+    left: 40vw;
+    height: 15em;
   }
 
   figcaption {
     position: absolute;
-    right: 50vw;
+    right: 60vw;
     margin-right: 1em;
     width: 20em;
     padding: 1em;
