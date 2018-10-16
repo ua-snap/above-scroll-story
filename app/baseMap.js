@@ -16,10 +16,10 @@ var crs = new L.Proj.CRS('EPSG:3338',
   }
 )
 var mapOptions = {
-  zoom: 1,
   minZoom: 0,
   maxZoom: 7,
-  center: [64.62756867126886, -151.58022337112894],
+  zoom: 2,
+  center: [64.62756867126886, -154],
   crs: crs,
   scrollWheelZoom: false,
   doubleClickZoom: false,

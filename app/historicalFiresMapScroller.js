@@ -4,10 +4,7 @@ import { layers } from 'observationMapLayers'
 import getCommunitiesLayer from 'communities'
 import scrollama from 'scrollama'
 
-var firesMap = getBaseMap('historical-fires__map', {
-  zoom: 2,
-  center: [64.62756867126886, -154]
-})
+var firesMap = getBaseMap('historical-fires__map')
 layers[3].addTo(firesMap)
 getCommunitiesLayer().addTo(firesMap)
 
