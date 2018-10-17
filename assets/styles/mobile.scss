@@ -1,0 +1,40 @@
+// mobile styles!
+* {
+  font-family: sans-serif;
+}
+
+.title-logos {
+  display: none;
+}
+
+aside {
+  display: none;
+}
+
+// Portrait mode
+@media (max-width: 400px) {
+  img {
+    width: 90vw;
+  }
+
+  .conclusion figure img {
+    width: 85vw;
+  }
+
+  .observation-wrapper {
+    margin: 1em 0;
+    padding-top: 1em;
+    border-top: 1px dotted #aaa;
+
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    h6 {
+      margin-bottom: 1ex;
+    }
+  }
+}

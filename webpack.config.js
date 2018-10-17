@@ -26,6 +26,11 @@ module.exports = {
         ],
         bundle: path.join(dirApp, 'index')
     },
+    output: {
+        path: path.join(__dirname, 'dist'),
+        filename: '[name].[chunkhash].js',
+        chunkFilename: '[name].bundle.js'
+    },
     resolve: {
         modules: [
             dirNode,
@@ -81,7 +86,8 @@ module.exports = {
                           "useBuiltIns": "entry"
                         }
                       ]
-                    ]
+                    ],
+                    plugins: ["@babel/plugin-syntax-dynamic-import"]
                   }
                 }
             },

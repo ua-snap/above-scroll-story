@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
 
+  <noscript>
+    <div style="padding-top: 20vh; text-align: center; height: 100vh; width: 100vw; background-color: #effffe;">
+      <div style="font-size: 96pt;">&#9785;</div>
+      <p>We&rsquo;re sorry!  This site doesn't work properly without Javascript enabled.</p>
+    </div>
+  </noscript>
+
   <%- include templates/title %>
-  <%- include templates/logos %>
   <%- include templates/tableOfContents %>
   <%- include templates/introduction %>
   <%- include templates/iceNarrative %>
