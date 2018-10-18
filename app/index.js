@@ -1,3 +1,6 @@
+// Polyfills
+import '@babel/polyfill'
+
 // Don't even load all the fancy stuff if we're on mobile.
 import isMobile from 'is-mobile'
 

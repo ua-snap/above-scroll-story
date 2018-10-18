@@ -2,9 +2,6 @@
  * Application entry point
  */
 
-// Polyfills
-import '@babel/polyfill'
-
 // Load application styles
 import 'styles/index.scss'
 
