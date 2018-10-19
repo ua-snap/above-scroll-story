@@ -1,17 +1,16 @@
+// Entry point which will branch & lazy-load code depending on platform.
+
 // Polyfills
 import '@babel/polyfill'
-
-// Don't even load all the fancy stuff if we're on mobile.
-import isMobile from 'is-mobile'
 
 // Load (tiny!) application styles
 import 'styles/mobile.scss'
 
+// Don't even load all the fancy stuff if we're on mobile.
+import isMobile from 'is-mobile'
 if (isMobile() === false) {
-  console.log('full version!')
   import('main')
 } else {
-  console.log('mobile version')
   // rewrite document for mobile!
   document.addEventListener('DOMContentLoaded', function () {
     // Delete sections with the maps.

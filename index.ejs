@@ -4,6 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <style>
+
+body {
+  font-family: sans-serif;
+  background-color: #eef4ed;
+  padding: 0;
+  margin: 0;
+}
+
+#loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 255);
+  color: #222;
+  text-align: center;
+  transition: all 2s ease-out;
+}
+
+#loading-overlay.loaded {
+  opacity: 0;
+}
+
+#loading-overlay #loading-message {
+  margin: 150px auto;
+  border-radius: 40px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  padding: -40px;
+  font-size: 32px;
+}
+
+#loading-wrapper {
+  padding: 60px;
+  margin-top: 80px;
+}
+
+#loading-wrapper h2 {
+  font-size: 32px;
+}
+
+#loading-wrapper p {
+  font-size: 24px;
+  margin: 0 important!;
+  padding: 0 important!;
+  font-family: 'Arial', sans-serif !important;
+}
+
+#loading-wrapper img {
+  display: block;
+  margin: 20px auto;
+}
+
+  </style>
 </head>
 <body>
 
@@ -14,27 +73,38 @@
     </div>
   </noscript>
 
-  <%- include templates/title %>
-  <%- include templates/tableOfContents %>
-  <%- include templates/introduction %>
-  <%- include templates/iceNarrative %>
-  <%- include templates/iceObservations %>
-  <%- include templates/winterTempsMapScroller %>
-  <%- include templates/snowNarrative %>
-  <%- include templates/snowObservations %>
-  <%- include templates/snowdayFractionMapScroller %>
-  <%- include templates/riverNarrative %>
-  <%- include templates/riverObservations %>
-  <%- include templates/landNarrative %>
-  <%- include templates/landObservations %>
-  <%- include templates/permafrostMapScroller %>
-  <%- include templates/vegetationNarrative %>
-  <%- include templates/vegetationObservations %>
-  <%- include templates/firesMapScroller %>
-  <%- include templates/conclusion %>
-  <%- include templates/credits %>
-  <%- include templates/references %>
-  <%- include templates/footer %>
+  <div id="loading-overlay">
+    <div id="loading-message">
+      <div id="loading-wrapper">
+        <h2>Living off the Land: Environmental impacts to access in Interior Alaska</h2>
+        <img src="images/loader.gif" />
+        <p>Loading page, just a moment please!</p>
+      </div>
+    </div>
+  </div>
 
+  <div id="app-wrapper">
+    <%- include templates/title %>
+    <%- include templates/tableOfContents %>
+    <%- include templates/introduction %>
+    <%- include templates/iceNarrative %>
+    <%- include templates/iceObservations %>
+    <%- include templates/winterTempsMapScroller %>
+    <%- include templates/snowNarrative %>
+    <%- include templates/snowObservations %>
+    <%- include templates/snowdayFractionMapScroller %>
+    <%- include templates/riverNarrative %>
+    <%- include templates/riverObservations %>
+    <%- include templates/landNarrative %>
+    <%- include templates/landObservations %>
+    <%- include templates/permafrostMapScroller %>
+    <%- include templates/vegetationNarrative %>
+    <%- include templates/vegetationObservations %>
+    <%- include templates/firesMapScroller %>
+    <%- include templates/conclusion %>
+    <%- include templates/credits %>
+    <%- include templates/references %>
+    <%- include templates/footer %>
+  </div>
 </body>
 </html>

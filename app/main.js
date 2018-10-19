@@ -1,6 +1,14 @@
 /**
- * Application entry point
+ * Application entry point for full (non-mobile) functionality.
  */
+// When DOM is ready, hide loading screen.
+window.addEventListener('load', function () {
+  let overlay = document.getElementById('loading-overlay')
+  overlay.classList.add('loaded')
+
+  let app = document.getElementById('app-wrapper')
+  app.style.display = 'block'
+})
 
 // Load application styles
 import 'styles/index.scss'

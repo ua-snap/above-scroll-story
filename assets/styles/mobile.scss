@@ -1,29 +1,29 @@
-// mobile styles!
-body {
-  font-family: sans-serif;
-  background-color: #eef4ed;
-  padding: 0;
-  margin: 0;
-}
-
-ol {
-  font-size: 110%;
-
-  li {
-    margin-bottom: 0.5ex;
-  }
-}
-
-.title-logos {
-  display: none;
-}
-
-aside {
-  display: none;
-}
-
 // Portrait mode
 @media (max-width: 400px) {
+  .narrative {
+    padding: 1rem 0.5rem;
+  }
+
+  #loading-overlay {
+    display: none;
+  }
+
+  ol {
+    font-size: 110%;
+
+    li {
+      margin-bottom: 0.5ex;
+    }
+  }
+
+  .title-logos {
+    display: none;
+  }
+
+  aside {
+    display: none;
+  }
+
   img {
     width: 96vw;
   }
@@ -69,8 +69,8 @@ aside {
     padding: 0;
     line-height: 1.4;
 
-    figure {
-      margin: 0;
+    figcaption {
+      margin: -1.2rem -1.7rem;
       padding: 0;
     }
   }
@@ -102,10 +102,12 @@ aside {
 
     h4 {
       font-size: 105%;
+      margin-bottom: 0.5ex;
     }
 
     h5 {
       font-size: 90%;
+      margin-bottom: 0.25ex;
     }
 
     h6 {

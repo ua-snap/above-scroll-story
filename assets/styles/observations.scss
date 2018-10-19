@@ -53,6 +53,7 @@ Some of these styles are fiddly; in particular, height and position properties.
 .observations__scroll-container {
   padding: 10vh 0;
   border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
   background-color: #fff;
   position: relative;
   height: 300vh; /* Will probably be overridden by specific scrollers which need a different height */
