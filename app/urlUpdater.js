@@ -10,6 +10,12 @@ var observer = new IntersectionObserver(entries => {
   if (visible) {
     let target = visible.target.getAttribute('name')
     state = '#' + target
+
+    // Ignore #top
+    if (target === 'top') {
+      state = '#'
+    }
+
     history.replaceState({ section: target }, undefined, state)
   }
 })
