@@ -15,7 +15,7 @@ body {
 }
 
 #loading-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
@@ -32,13 +32,18 @@ body {
 }
 
 #loading-overlay #loading-message {
-  margin: 150px auto;
+  margin: 100px auto;
   border-radius: 40px;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   background-color: #fff;
   padding: -40px;
   font-size: 32px;
+  transition: all 1s;
+}
+
+#loading-overlay.loaded #loading-message {
+  opacity: 0;
 }
 
 #loading-wrapper {
@@ -51,7 +56,8 @@ body {
 }
 
 #loading-wrapper p {
-  font-size: 24px;
+  font-size: 18px;
+  font-style: italic;
   margin: 0 important!;
   padding: 0 important!;
   font-family: 'Arial', sans-serif !important;
@@ -78,7 +84,7 @@ body {
       <div id="loading-wrapper">
         <h2>Living off the Land: Environmental impacts to access in Interior Alaska</h2>
         <img src="images/loader.gif" />
-        <p>Loading page, just a moment please!</p>
+        <p>Loading&hellip;</p>
       </div>
     </div>
   </div>
