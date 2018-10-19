@@ -23,17 +23,8 @@ var lazyLoaded = new LazyLoad({ // eslint-disable-line
   elements_selector: '.lazy'
 })
 
-// Update URL & restore link location if relevant
+// Update URL fragments as user scrolls
 import 'urlUpdater'
-const scrollToElement = require('scroll-to-element')
-if (window.location.hash) {
-  var el = document.querySelector('a[name="' + window.location.hash + '"]')
-  if (el) {
-    scrollToElement(el, {
-      offset: -50
-    })
-  }
-}
 
 // Shared code
 import 'baseMap'
