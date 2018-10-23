@@ -23,9 +23,6 @@ var lazyLoaded = new LazyLoad({ // eslint-disable-line
   elements_selector: '.lazy'
 })
 
-// Update URL fragments as user scrolls
-import 'urlUpdater'
-
 // Shared code
 import 'baseMap'
 import { setupObservationsScroller } from 'observations'
