@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // Is the current build a development build
 const IS_DEV = (process.env.NODE_ENV === 'dev');
@@ -21,15 +22,12 @@ const appHtmlTitle = 'NASA ABOVE';
  */
 module.exports = {
     entry: {
-        vendor: [
-            'lodash'
-        ],
-        bundle: path.join(dirApp, 'index')
+        index: path.join(dirApp, 'index')
     },
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].[chunkhash].js',
-        chunkFilename: '[name].bundle.js'
+        chunkFilename: '[name].[chunkhash].js'
     },
     resolve: {
         modules: [
@@ -38,12 +36,13 @@ module.exports = {
             dirAssets
         ],
         alias: {
-          '@': dirAssets,
           node_modules: dirNode,
-          'images': path.join(dirAssets, 'images')
+          'images': path.join(dirAssets, 'images'),
+          'assets': dirAssets
         }
     },
     plugins: [
+        new BundleAnalyzerPlugin(),
         new webpack.DefinePlugin({
             IS_DEV: IS_DEV
         }),
@@ -82,8 +81,7 @@ module.exports = {
                       [
                         "@babel/preset-env",
                         {
-                          debug: true,
-                          "useBuiltIns": "entry"
+                           "useBuiltIns": "entry"
                         }
                       ]
                     ],

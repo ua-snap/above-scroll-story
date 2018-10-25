@@ -3,12 +3,12 @@
   display: relative;
 
   @media (max-width: 1400px) {
-    background: url('~images/obs/dogs-lake-margin-minchumina-water.jpg') no-repeat;
+    background: url('../images/obs/dogs-lake-margin-minchumina-water.jpg') no-repeat;
     background-size: cover;
   }
 
   @media (min-width: 1400px) {
-    background: url('~images/title-page-full-resolution.jpg') no-repeat;
+    background: url('../images/title-page-full-resolution.jpg') no-repeat;
     background-size: cover;
   }
 

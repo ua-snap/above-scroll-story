@@ -1,4 +1,4 @@
-import observations from '@/all-observations'
+import observations from 'assets/all-observations'
 import L from 'leaflet'
 
 // Color map for the different categories

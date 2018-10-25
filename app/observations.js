@@ -1,5 +1,5 @@
 import scrollama from 'scrollama'
-import _ from 'lodash'
+import forEach from 'lodash.foreach'
 
 export function setupObservationsScroller (selector) {
   var images = document.querySelectorAll(selector + ' .observations__images > img, ' + selector + ' .observations__images > figure')
@@ -15,7 +15,7 @@ export function setupObservationsScroller (selector) {
     }
   ).onStepEnter(
     (obj) => {
-      _.each(images, (img, index) => {
+      forEach(images, (img, index) => {
         if (obj.index === index) {
           images[index].classList.add('shown')
           images[index].classList.remove('hidden')
