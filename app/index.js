@@ -4,6 +4,12 @@
 import '@babel/polyfill'
 
 // Load (tiny!) application styles
+// CSS is included directly in index.ejs
+import pace from 'pace-progressbar'
+pace.start({
+  target: '#pace-loading-placeholder'
+})
+
 import 'styles/mobile.scss'
 
 // Don't even load all the fancy stuff if we're on mobile.

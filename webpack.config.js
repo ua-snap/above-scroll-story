@@ -27,7 +27,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].[chunkhash].js',
-        chunkFilename: '[name].[chunkhash].js'
+        chunkFilename: '[name].[chunkhash].js',
+        chunkLoadTimeout: 1000000
     },
     resolve: {
         modules: [
@@ -88,6 +89,11 @@ module.exports = {
                     plugins: ["@babel/plugin-syntax-dynamic-import"]
                   }
                 }
+            },
+            {
+              test: /\.css$/,
+              include: /node_modules/,
+              loaders: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.scss/,
