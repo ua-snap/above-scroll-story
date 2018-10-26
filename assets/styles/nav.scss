@@ -14,10 +14,11 @@ nav.menu {
   transition: all 1s;
 
   ol {
+    border-top: 1px dotted #aaa;
     display: none;
     list-style-type: none;
     margin: 1em 0 1ex;
-    padding: 0;
+    padding: 1em 0 0;
 
     li {
       margin: 0;

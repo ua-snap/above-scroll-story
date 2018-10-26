@@ -29,7 +29,8 @@ var layout = {
     size: 18
   },
   xaxis: {
-    range: [0, 165]
+    range: [0, 165],
+    title: '# of observations'
   },
   yaxis: {
     type: 'category',
@@ -38,7 +39,7 @@ var layout = {
   margin: {
     l: 170,
     r: 0,
-    b: 30,
+    b: 80,
     t: 0,
     pad: 10
   }

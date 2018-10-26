@@ -14,7 +14,7 @@ var historicalTrace = {
 var modelledTrace = {
   x: years,
   y: modeled,
-  name: 'Modeled',
+  name: 'Projected',
   type: 'bar'
 }
 
@@ -28,7 +28,10 @@ var layout = {
   },
   legend: {
     x: 0,
-    y: -0.25
+    y: -0.25,
+    font: {
+      size: 18
+    }
   },
   responsive: true,
   xaxis: {
