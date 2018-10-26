@@ -3,8 +3,6 @@ import Plotly from 'plotly.js-basic-dist'
 const categories = ['Ice', 'Water levels', 'Snow', 'Vegetation changes', 'Erosion', 'Sedimentation', 'Weather']
 const obs = [156, 134, 126, 112, 100, 67, 52]
 
-obs
-
 var trace1 = {
   x: obs,
   y: categories,

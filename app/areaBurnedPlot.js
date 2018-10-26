@@ -28,7 +28,7 @@ var layout = {
   },
   legend: {
     x: 0,
-    y: -0.25,
+    y: -0.4,
     font: {
       size: 18
     }
@@ -39,4 +39,7 @@ var layout = {
   }
 }
 
-Plotly.newPlot('area-burned-plot', data, layout)
+Plotly.newPlot('area-burned-plot', data, layout, {
+  displayModeBar: false,
+  staticPlot: true
+})
