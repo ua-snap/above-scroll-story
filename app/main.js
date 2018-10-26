@@ -23,9 +23,6 @@ var lazyLoaded = new LazyLoad({ // eslint-disable-line
   elements_selector: '.lazy'
 })
 
-// Track page section views in GA
-import 'eventTracker'
-
 // Shared code
 import 'baseMap'
 import { setupObservationsScroller } from 'observations'
