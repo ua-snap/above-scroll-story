@@ -15,7 +15,7 @@ var permafrostMapLayers = [
   'July_permafrost_2m_2010s_tcc'
 ].map(layerName => {
   L.tileLayer.wms(
-    'http://52.24.100.6:8080/geoserver/wms',
+    'http://54.70.10.93:8080/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],

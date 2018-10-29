@@ -15,7 +15,7 @@ var snowdayFractionMapLayers = [
   'Oct_snowdayfraction_2010s_tcc_reprojected'
 ].map(layerName => {
   L.tileLayer.wms(
-    'http://52.24.100.6:8080/geoserver/wms',
+    'http://54.70.10.93:8080/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],
