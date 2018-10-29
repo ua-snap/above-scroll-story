@@ -30,6 +30,13 @@ var resizeHandler = function () {
 window.addEventListener('resize', resizeHandler)
 
 function handleStepEnter (obj) {
+  if (obj.index !== 0) {
+    document.getElementsByClassName('historical-fires__legend')[0].classList.remove('hidden')
+    document.getElementsByClassName('historical-fires__legend')[0].classList.add('visible')
+  } else {
+    document.getElementsByClassName('historical-fires__legend')[0].classList.add('hidden')
+    document.getElementsByClassName('historical-fires__legend')[0].classList.remove('visible')
+  }
   firesMapLayers.forEach((layer, index) => {
     if (index === obj.index) {
       layer.classList.remove('map-layer-invisible')
