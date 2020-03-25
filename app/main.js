@@ -35,10 +35,8 @@ setupObservationsScroller('.land-observations')
 setupObservationsScroller('.vegetation-observations')
 
 // Other region-specific code
-import 'observationsBarChart'
 import 'winterTempsMapScroller'
 import 'permafrostMapScroller'
-import 'areaBurnedPlot'
 import 'observationMapLayers'
 import 'historicalFiresMapScroller'
 import 'snowdayFractionMapScroller'

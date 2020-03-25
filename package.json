@@ -23,7 +23,6 @@
     "lodash.foreach": "^4.5.0",
     "pace-progressbar": "^1.0.8",
     "picnic": "^6.5.0",
-    "plotly.js-basic-dist": "^1.41.2",
     "proj4leaflet": "^1.0.2",
     "scrollama": "^1.4.3",
     "stickyfilljs": "^2.1.0",
