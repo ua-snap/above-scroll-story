@@ -1,5 +1,7 @@
-// Portrait mode
-@media (max-width: 400px) {
+// Portrait-ish mode.
+// Device sizes are a little tricky, but this
+// will work for most of the devices we intend for it to.
+@media (max-width: 600px) {
   h1 {
     padding: 1rem 0.5rem;
   }
@@ -77,8 +79,17 @@
     padding: 0;
     line-height: 1.4;
 
+    figure {
+      margin: 1em;
+      padding: 0;
+
+      img {
+        max-width: 90vw;
+      }
+    }
+
     figcaption {
-      margin: -1.2rem -1.7rem;
+      margin: 1em 0;
       padding: 0;
     }
   }

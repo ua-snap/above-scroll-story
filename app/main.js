@@ -5,9 +5,6 @@
 window.addEventListener('load', function () {
   let overlay = document.getElementById('loading-overlay')
   overlay.classList.add('loaded')
-
-  let app = document.getElementById('app-wrapper')
-  app.style.display = 'block'
 })
 
 // Load application styles

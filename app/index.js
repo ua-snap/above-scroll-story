@@ -18,6 +18,9 @@ if (isMobile() === false) {
   import('main')
 } else {
   // rewrite document for mobile!
+  let overlay = document.getElementById('loading-overlay')
+  overlay.style.display = 'none'
+
   document.addEventListener('DOMContentLoaded', function () {
     // Delete sections with the maps.
     var mapScrollers = document.querySelectorAll('.map-scroller')
@@ -32,6 +35,7 @@ if (isMobile() === false) {
       let images = observationScrollers[j].querySelectorAll('.observations__images > img')
       let obs = observationScrollers[j].querySelectorAll('.observation')
       let newObsRoot = document.createElement('div')
+
       for (let i = 0; i < images.length; i++) {
         // Reassign image to mobile-optimized versions
         let src = images[i].getAttribute('data-src').replace(/obs/gi, 'mobile')
@@ -40,7 +44,13 @@ if (isMobile() === false) {
         let obsWrapper = document.createElement('div')
         obsWrapper.classList.add('observation-wrapper')
         obsWrapper.appendChild(images[i])
-        obsWrapper.appendChild(obs[i])
+
+        // Prevent error where # of observations is
+        // slightly different from image count --
+        // harmless but will halt execution.
+        if (obs[i]) {
+          obsWrapper.appendChild(obs[i])
+        }
         newObsRoot.appendChild(obsWrapper)
       }
       observationScrollers[j].innerHTML = ''
