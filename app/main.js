@@ -5,9 +5,6 @@
 window.addEventListener('load', function () {
   let overlay = document.getElementById('loading-overlay')
   overlay.classList.add('loaded')
-
-  let app = document.getElementById('app-wrapper')
-  app.style.display = 'block'
 })
 
 // Load application styles
@@ -35,10 +32,8 @@ setupObservationsScroller('.land-observations')
 setupObservationsScroller('.vegetation-observations')
 
 // Other region-specific code
-import 'observationsBarChart'
 import 'winterTempsMapScroller'
 import 'permafrostMapScroller'
-import 'areaBurnedPlot'
 import 'observationMapLayers'
 import 'historicalFiresMapScroller'
 import 'snowdayFractionMapScroller'

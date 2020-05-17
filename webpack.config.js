@@ -11,7 +11,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 // Is the current build a development build
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 
-const dirNode = 'node_modules';
+const dirNode = path.resolve(__dirname, 'node_modules');
 const dirApp = path.resolve(__dirname, 'app');
 const dirAssets = path.resolve(__dirname, 'assets');
 

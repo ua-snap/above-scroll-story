@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(webpackConfig, {
 
+    mode: 'production',
     devtool: 'source-map',
 
     plugins: [
