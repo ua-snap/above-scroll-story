@@ -6,6 +6,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(webpackConfig, {
 
+    output: {
+      publicPath: '/tools/living-off-the-land'
+    },
+
     mode: 'production',
     devtool: 'source-map',
 
