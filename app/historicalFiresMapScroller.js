@@ -9,7 +9,7 @@ layers[3].addTo(firesMap)
 getCommunitiesLayer().addTo(firesMap)
 
 L.tileLayer.wms(
-  'http://54.70.10.93:8080/geoserver/wms',
+  'https://gs.mapventure.org/geoserver/wms',
   {
     ...baseLayerOptions,
     layers: ['historical_fire_perimiters'],

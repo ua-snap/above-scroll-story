@@ -17,7 +17,7 @@ tempsFrozenSeasonMapLayers = [
   'wintertemp_2010s_tcc'
 ].map(layerName => {
   L.tileLayer.wms(
-    'http://54.70.10.93:8080/geoserver/wms',
+    'https://gs.mapventure.org/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],

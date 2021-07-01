@@ -37,7 +37,7 @@ export var baseLayerOptions = {
 }
 
 function getBaseLayer () {
-  return L.tileLayer.wms('http://54.70.10.93:8080/geoserver/wms',
+  return L.tileLayer.wms('https://gs.mapventure.org/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['alaska_osm']
