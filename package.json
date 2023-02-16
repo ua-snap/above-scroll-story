@@ -43,7 +43,7 @@
     "cross-env": "5.2.0",
     "css-loader": "1.0.0",
     "csvtojson": "^2.0.8",
-    "ejs": "^2.6.1",
+    "ejs": "^3.1.7",
     "ejs-compiled-loader": "github:ua-snap/ejs-compiled-loader",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^6.2.1",
