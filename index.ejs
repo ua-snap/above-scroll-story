@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,141 +9,137 @@
   <meta name="twitter:site" content="@IARC_Alaska">
   <meta property="og:url" content="http://mapventure.org/environmental-impacts-access/index.html">
   <meta property="og:title" content="Living off the Land: Environmental impacts to access in Interior Alaska">
-  <meta property="og:description" content="Between 2016 and 2017, 26 observers from nine communities in Interior Alaska documented climate-related environmental conditions that were affecting their travel to areas used for hunting, fishing, trapping, and gathering. These conditions included ice, snow, erosion, sedimentation, water levels, vegetation composition, and weather.">
-  <meta property="og:image" content="http://mapventure.org/environmental-impacts-access/images/mobile/dogs-spring-ice-minchumina.jpg">
+  <meta property="og:description"
+    content="Between 2016 and 2017, 26 observers from nine communities in Interior Alaska documented climate-related environmental conditions that were affecting their travel to areas used for hunting, fishing, trapping, and gathering. These conditions included ice, snow, erosion, sedimentation, water levels, vegetation composition, and weather.">
+  <meta property="og:image"
+    content="http://mapventure.org/environmental-impacts-access/images/mobile/dogs-spring-ice-minchumina.jpg">
 
   <title>Living off the Land: Environmental impacts to access in Interior Alaska</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3978613-10"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-3978613-10');
+  <script async defer data-website-id="2cc0e2a7-2f41-4500-bce9-77eab64d5913" src="https://umami.snap.uaf.edu/umami.js" data-do-not-track="true" data-domains="snap.uaf.edu">
   </script>
 
   <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eef4ed;
+      padding: 0;
+      margin: 0;
+    }
 
-body {
-  font-family: sans-serif;
-  background-color: #eef4ed;
-  padding: 0;
-  margin: 0;
-}
+    #loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 255);
+      color: #222;
+      text-align: center;
+      transition: all 2s ease-out;
+      line-height: 1 !important;
+    }
 
-#loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10000;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 255);
-  color: #222;
-  text-align: center;
-  transition: all 2s ease-out;
-  line-height: 1 !important;
-}
+    #loading-overlay.loaded {
+      opacity: 0;
+      z-index: -1;
+    }
 
-#loading-overlay.loaded {
-  opacity: 0;
-  z-index: -1;
-}
+    #loading-overlay #loading-message {
+      margin: 100px auto;
+      border-radius: 40px;
+      width: 450px;
+      height: 450px;
+      background-color: #fff;
+      padding: -40px;
+      font-size: 32px;
+      line-height: 1 !important;
+      transition: opacity 1s;
+    }
 
-#loading-overlay #loading-message {
-  margin: 100px auto;
-  border-radius: 40px;
-  width: 450px;
-  height: 450px;
-  background-color: #fff;
-  padding: -40px;
-  font-size: 32px;
-  line-height: 1 !important;
-  transition: opacity 1s;
-}
+    #loading-overlay.loaded #loading-message {
+      opacity: 0;
+    }
 
-#loading-overlay.loaded #loading-message {
-  opacity: 0;
-}
+    #loading-wrapper {
+      padding: 60px;
+      margin-top: 80px;
+    }
 
-#loading-wrapper {
-  padding: 60px;
-  margin-top: 80px;
-}
+    #loading-wrapper h2 {
+      font-size: 32px;
+    }
 
-#loading-wrapper h2 {
-  font-size: 32px;
-}
+    #loading-wrapper p {
+      font-size: 18px;
+      font-style: italic;
+      margin: 0 important !;
+      padding: 0 important !;
+      font-family: 'Arial', sans-serif !important;
+    }
 
-#loading-wrapper p {
-  font-size: 18px;
-  font-style: italic;
-  margin: 0 important!;
-  padding: 0 important!;
-  font-family: 'Arial', sans-serif !important;
-}
+    #loading-wrapper img {
+      display: block;
+      margin: 20px auto;
+    }
 
-#loading-wrapper img {
-  display: block;
-  margin: 20px auto;
-}
+    #pace-loading-placeholder {
+      position: relative;
+      width: 100%;
+      height: 100px;
+    }
 
-#pace-loading-placeholder {
-  position: relative;
-  width: 100%;
-  height: 100px;
-}
+    /* This is a compiled file, you should be editing the file in the templates directory */
+    .pace {
+      -webkit-pointer-events: none;
+      pointer-events: none;
 
-/* This is a compiled file, you should be editing the file in the templates directory */
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
+    .pace.pace-inactive .pace-progress {
+      display: none;
+    }
 
-.pace.pace-inactive .pace-progress {
-  display: none;
-}
+    .pace .pace-progress {
+      width: 100%;
+      text-align: center;
+      height: 100px;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      -ms-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+    }
 
-.pace .pace-progress {
-  width: 100%;
-  text-align: center;
-  height: 100px;
-  -webkit-transform: translate3d(0, 0, 0) !important;
-  -ms-transform: translate3d(0, 0, 0) !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
-.pace .pace-progress:after {
-  display: block;
-  content: attr(data-progress-text);
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 1;
-  color: rgba(34, 153, 221, 1);
-}
+    .pace .pace-progress:after {
+      display: block;
+      content: attr(data-progress-text);
+      font-family: "Cabin", sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 1;
+      color: rgba(34, 153, 221, 1);
+    }
 
   </style>
 </head>
+
 <body>
 
   <noscript>
     <div style="padding-top: 20vh; text-align: center; height: 100vh; width: 100vw; background-color: #effffe;">
       <div style="font-size: 96pt;">&#9785;</div>
-      <p>We&rsquo;re sorry!  This site doesn't work properly without Javascript enabled.</p>
+      <p>We&rsquo;re sorry! This site doesn't work properly without Javascript enabled.</p>
     </div>
   </noscript>
 
   <div id="loading-overlay">
     <div id="loading-message">
       <div id="loading-wrapper">
-        <h2 style="font-size: 32px !important; font-weight: bold !important; line-height: 1 !important;">Living off the Land: Environmental impacts to access in Interior Alaska</h2>
+        <h2 style="font-size: 32px !important; font-weight: bold !important; line-height: 1 !important;">Living off the
+          Land: Environmental impacts to access in Interior Alaska</h2>
         <div id="pace-loading-placeholder"></div>
         <p>Loading&hellip;</p>
       </div>
@@ -174,4 +171,5 @@ body {
     <%- include templates/footer %>
   </div>
 </body>
+
 </html>

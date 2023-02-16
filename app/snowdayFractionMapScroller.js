@@ -12,16 +12,15 @@ getCommunitiesLayer().addTo(snowdayFractionMap)
 // instantiated Leaflet element.
 var snowdayFractionMapLayers = [
   'Oct_snowdayfraction_1970s_tcc_reprojected',
-  'Oct_snowdayfraction_2010s_tcc_reprojected'
+  'Oct_snowdayfraction_2010s_tcc_reprojected',
 ].map(layerName => {
-  L.tileLayer.wms(
-    'http://54.70.10.93:8080/geoserver/wms',
-    {
+  L.tileLayer
+    .wms('https://gs.mapventure.org/geoserver/wms', {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],
-      className: 'animate-layer map-layer-invisible ' + layerName
-    }
-  ).addTo(snowdayFractionMap)
+      className: 'animate-layer map-layer-invisible ' + layerName,
+    })
+    .addTo(snowdayFractionMap)
   return document.getElementsByClassName(layerName)[0]
 })
 
@@ -35,14 +34,22 @@ var resizeHandler = function () {
 }
 window.addEventListener('resize', resizeHandler)
 
-function handleStepEnter (obj) {
+function handleStepEnter(obj) {
   // If on 1st step, hide map legend.
   if (obj.index !== 0) {
-    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.remove('hidden')
-    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.add('visible')
+    document
+      .getElementsByClassName('snowday-fraction-map__legend')[0]
+      .classList.remove('hidden')
+    document
+      .getElementsByClassName('snowday-fraction-map__legend')[0]
+      .classList.add('visible')
   } else {
-    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.add('hidden')
-    document.getElementsByClassName('snowday-fraction-map__legend')[0].classList.remove('visible')
+    document
+      .getElementsByClassName('snowday-fraction-map__legend')[0]
+      .classList.add('hidden')
+    document
+      .getElementsByClassName('snowday-fraction-map__legend')[0]
+      .classList.remove('visible')
   }
   snowdayFractionMapLayers.forEach((layer, index) => {
     if (index === obj.index) {
@@ -59,6 +66,6 @@ scroller
   .setup({
     step: '.snowday-fraction-map__scroll-container .scroll__text .step',
     container: '.snowday-fraction-map__scroll-container',
-    graphic: '.snowday-fraction-map__scroll-container .scroll__graphic'
+    graphic: '.snowday-fraction-map__scroll-container .scroll__graphic',
   })
   .onStepEnter(handleStepEnter)

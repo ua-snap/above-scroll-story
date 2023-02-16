@@ -7,7 +7,7 @@ import '@babel/polyfill'
 // CSS is included directly in index.ejs
 import pace from 'pace-progressbar'
 pace.start({
-  target: '#pace-loading-placeholder'
+  target: '#pace-loading-placeholder',
 })
 
 import 'styles/mobile.scss'
@@ -32,7 +32,9 @@ if (isMobile() === false) {
     var observationScrollers = document.querySelectorAll('.scroll-container')
     for (let j = 0; j < observationScrollers.length; j++) {
       // Get the images & observations...
-      let images = observationScrollers[j].querySelectorAll('.observations__images > img')
+      let images = observationScrollers[j].querySelectorAll(
+        '.observations__images > img'
+      )
       let obs = observationScrollers[j].querySelectorAll('.observation')
       let newObsRoot = document.createElement('div')
 
