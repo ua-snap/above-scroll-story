@@ -16,8 +16,9 @@ import Stickyfill from 'stickyfilljs'
 
 // Lazy-load images below the fold
 import LazyLoad from 'vanilla-lazyload'
-var lazyLoaded = new LazyLoad({ // eslint-disable-line
-  elements_selector: '.lazy'
+var lazyLoaded = new LazyLoad({
+  // eslint-disable-line
+  elements_selector: '.lazy',
 })
 
 // Shared code
