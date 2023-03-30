@@ -40,7 +40,7 @@ export var baseLayerOptions = {
 function getBaseLayer() {
   return L.tileLayer.wms('https://gs.mapventure.org/geoserver/wms', {
     ...baseLayerOptions,
-    layers: ['alaska_osm_retina'],
+    layers: ['alaska_osm_retina_no_places'],
   })
 }
 
