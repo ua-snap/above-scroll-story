@@ -15,7 +15,7 @@ var snowdayFractionMapLayers = [
   'Oct_snowdayfraction_2010s_tcc_reprojected',
 ].map(layerName => {
   L.tileLayer
-    .wms('https://gs.mapventure.org/geoserver/wms', {
+    .wms('https://gs.earthmaps.io/geoserver/wms', {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],
       className: 'animate-layer map-layer-invisible ' + layerName,

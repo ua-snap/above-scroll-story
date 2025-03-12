@@ -9,7 +9,7 @@ layers[3].addTo(firesMap)
 getCommunitiesLayer().addTo(firesMap)
 
 L.tileLayer
-  .wms('https://gs.mapventure.org/geoserver/wms', {
+  .wms('https://gs.earthmaps.io/geoserver/wms', {
     ...baseLayerOptions,
     layers: ['historical_fire_perimiters'],
     className: 'animate-layer map-layer-invisible fire_history_70s_2010s',
