@@ -10,7 +10,7 @@ L.geoJSON(snowIceObs).addTo(map)
 var temps1970s = L.tileLayer
   .wms(
     // eslint-disable-line
-    'https://gs.mapventure.org/geoserver/wms',
+    'https://gs.earthmaps.io/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['nasa_above:wintertemp_1970s_tcc'],
@@ -23,7 +23,7 @@ var temps1970sLayerEl = document.getElementsByClassName('temps-1970s')[0]
 var temps2010s = L.tileLayer
   .wms(
     // eslint-disable-line
-    'https://gs.mapventure.org/geoserver/wms',
+    'https://gs.earthmaps.io/geoserver/wms',
     {
       ...baseLayerOptions,
       layers: ['nasa_above:wintertemp_2010s_tcc'],

@@ -15,7 +15,7 @@ var permafrostMapLayers = [
   'July_permafrost_2m_2010s_tcc',
 ].map(layerName => {
   L.tileLayer
-    .wms('https://gs.mapventure.org/geoserver/wms', {
+    .wms('https://gs.earthmaps.io/geoserver/wms', {
       ...baseLayerOptions,
       layers: ['nasa_above:' + layerName],
       className: 'animate-layer map-layer-invisible ' + layerName,
